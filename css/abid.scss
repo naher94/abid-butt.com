@@ -1,0 +1,54 @@
+--- 
+  # Front matter comment to ensure Jekyll properly reads file. 
+--- 
+
+//******* Variables
+
+// Numbers
+$color-percentage: 10%;
+
+// Colors
+$ab-black: #000000;
+$ab-grey: #F4F4F4;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+$lato: 'Lato', sans-serif;
+$light: 300;
+$regular: 400;
+$bold: 700;
+$black: 900;
+//******* End of Variables
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: $lato;
+  color: $ab-black;
+  font-weight: $regular;
+}
+
+.logo{
+  width: 100px;
+}
+
+
+//******* Foundation Overrides
+.column:last-child:not(:first-child),
+.columns:last-child:not(:first-child) {
+  float: left;
+}
+//******* End of Foundation Overrides
+
+
+//******* Mobile Styling
+
+// Measurments pulled from foundation css file
+// Mobile Styling
+@media screen and (max-width: 40em) {
+  
+}
+
+// Tablet Styling
+@media screen and (max-width: 64em) {
+  
+}
+//******* End of Mobile Styling
