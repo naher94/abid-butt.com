@@ -88,24 +88,57 @@ p {
   background-image: url("../img/host.png");
   background-position: left; }
 
+.cv {
+  margin-top: 50px; }
+  .cv h2 {
+    font-weight: 300;
+    font-size: 28px; }
+  .cv table {
+    text-align: left;
+    font-weight: 400;
+    color: #6D6D6D; }
+    .cv table tbody {
+      border: none; }
+      .cv table tbody tr:nth-child(even) {
+        background-color: white; }
+      .cv table tbody th {
+        font-weight: 400;
+        padding: 0.25rem 0.5rem 0.5rem; }
+  .cv h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    line-height: 1.2; }
+  .cv h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6D6D6D; }
+  .cv p {
+    color: #6D6D6D; }
+  .cv .section {
+    margin-bottom: 50px; }
+
 footer {
   padding: 20px;
   background-color: #F4F4F4; }
   footer .footer-right {
     text-align: right; }
   footer .logo {
-    width: 60px; }
+    width: 60px;
+    opacity: 0.2; }
   footer .linkedin {
     margin-top: 10px;
-    width: 40px; }
+    width: 40px;
+    opacity: 0.2; }
     footer .linkedin:hover {
-      opacity: 0.7; }
+      opacity: 0.4; }
   footer .twitter {
     margin-top: 14px;
     width: 42px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    opacity: 0.2; }
     footer .twitter:hover {
-      opacity: 0.7; }
+      opacity: 0.4; }
 
 .no-select {
   -webkit-touch-callout: none;
@@ -147,6 +180,19 @@ footer {
     .bio p {
       font-size: 14px; }
 
+  .cv .section {
+    margin-bottom: 30px; }
+  .cv h2 {
+    font-size: 22px; }
+  .cv table {
+    font-size: 12px; }
+  .cv h3 {
+    font-size: 16px; }
+  .cv h4 {
+    font-size: 14px; }
+  .cv p {
+    font-size: 14px; }
+
   footer .logo {
     width: 30px; }
   footer .linkedin {
@@ -163,10 +209,12 @@ footer {
       color: white; }
 
   .banyan {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/banyantree.png") center center; }
+    background: linear-gradient(black, black), url("../img/banyantree.png") center center; }
 
   .turtle {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/turtlebay.png") center center; }
+    background: linear-gradient(black, black), url("../img/turtlebay.png") center center; }
 
   .host {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/host.png") center center; } }
+    background: linear-gradient(#f4f4f4, #f4f4f4), url("../img/host.png") center center; }
+    .host h2, .host h3, .host h4, .host p {
+      color: #000000; } }
