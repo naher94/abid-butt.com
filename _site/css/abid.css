@@ -92,10 +92,11 @@ p {
   margin-top: 50px; }
   .cv h2 {
     font-weight: 300;
-    font-size: 26px; }
+    font-size: 28px; }
   .cv table {
     text-align: left;
-    font-weight: 400; }
+    font-weight: 400;
+    color: #6D6D6D; }
     .cv table tbody {
       border: none; }
       .cv table tbody tr:nth-child(even) {
@@ -103,6 +104,19 @@ p {
       .cv table tbody th {
         font-weight: 400;
         padding: 0.25rem 0.5rem 0.5rem; }
+  .cv h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    line-height: 1.2; }
+  .cv h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6D6D6D; }
+  .cv p {
+    color: #6D6D6D; }
+  .cv .section {
+    margin-bottom: 50px; }
 
 footer {
   padding: 20px;
@@ -110,18 +124,21 @@ footer {
   footer .footer-right {
     text-align: right; }
   footer .logo {
-    width: 60px; }
+    width: 60px;
+    opacity: 0.2; }
   footer .linkedin {
     margin-top: 10px;
-    width: 40px; }
+    width: 40px;
+    opacity: 0.2; }
     footer .linkedin:hover {
-      opacity: 0.7; }
+      opacity: 0.4; }
   footer .twitter {
     margin-top: 14px;
     width: 42px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    opacity: 0.2; }
     footer .twitter:hover {
-      opacity: 0.7; }
+      opacity: 0.4; }
 
 .no-select {
   -webkit-touch-callout: none;

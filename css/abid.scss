@@ -10,6 +10,7 @@ $color-percentage: 10%;
 // Colors
 $ab-black: #000000;
 $ab-grey: #F4F4F4;
+$ab-deep-grey: #6D6D6D;
 $ab-white: #D1D1D1;
 
 // Fonts
@@ -139,11 +140,12 @@ p{
   //margin-bottom: 50px;
   h2{
     font-weight: $light;
-    font-size: 26px;
+    font-size: 28px;
   }
   table{
     text-align: left;
     font-weight: $regular;
+    color: $ab-deep-grey;
     tbody {
       border: none;
       tr:nth-child(even){
@@ -154,6 +156,23 @@ p{
         padding: 0.25rem 0.5rem 0.5rem;
       }
     }
+  }
+  h3{
+    font-size: 20px;
+    font-weight: $bold;
+    margin-bottom: 0px;
+    line-height: 1.2;
+  }
+  h4{
+    font-size: 16px;
+    font-weight: $regular;
+    color: $ab-deep-grey;
+  }
+  p{
+    color: $ab-deep-grey;
+  }
+  .section{
+    margin-bottom: 50px;
   }
 }
 
@@ -168,20 +187,23 @@ footer{
   }
   .logo{
     width: 60px;
+    opacity: 0.2;
   }
   .linkedin{
     margin-top: 10px;
     width: 40px;
+    opacity: 0.2;
     &:hover{
-      opacity: 0.7;
+      opacity: 0.4;
     }
   }
   .twitter{
     margin-top: 14px;
     width: 42px;
     margin-left: 20px;
+    opacity: 0.2;
     &:hover{
-      opacity: 0.7;
+      opacity: 0.4;
     }
   }
 }
