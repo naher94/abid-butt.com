@@ -165,5 +165,8 @@ footer {
   .banyan {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/banyantree.png") center center; }
 
-  .banyan {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/turtlebay.png") center center; } }
+  .turtle {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/turtlebay.png") center center; }
+
+  .host {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/host.png") center center; } }
