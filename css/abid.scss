@@ -99,7 +99,6 @@ p{
   color: white;
   padding-top: 70px;
   padding-bottom: 70px;
-  background-image: url("../img/banyantree.png");
   background-position: right;
   background-repeat: no-repeat;
   h2{
@@ -122,6 +121,10 @@ p{
     //font-size: 14px;
   }
   
+}
+
+.banyan{
+  background-image: url("../img/banyantree.png");
 }
 
 footer{
@@ -221,7 +224,14 @@ footer{
       margin-top: 3px;
     }
   }
-  
+  .featured{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-position: center center;
+  }
+  .banyan{
+    //opacity: 0.5;
+  }
 }
 
 // Tablet Styling
