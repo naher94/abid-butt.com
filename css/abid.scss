@@ -26,8 +26,11 @@ body, h1, h2, h3, h4, h5, h6 {
   font-weight: $regular;
 }
 
-.logo{
-  width: 100px;
+header{
+  padding: 10px;
+  .logo{
+    width: 100px;
+  }
 }
 
 
