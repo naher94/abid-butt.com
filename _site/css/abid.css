@@ -151,5 +151,9 @@ footer {
 
   .featured {
     padding-top: 30px;
-    padding-bottom: 30px;
-    background-position: center center; } }
+    padding-bottom: 30px; }
+    .featured h2, .featured h3, .featured h4, .featured p {
+      color: white; }
+
+  .banyan {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/banyantree.png") center center; } }
