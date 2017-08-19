@@ -59,8 +59,8 @@ p {
 .featured {
   background-color: #000000;
   color: white;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-position: right;
   background-repeat: no-repeat; }
   .featured h2 {
@@ -80,6 +80,13 @@ p {
 
 .banyan {
   background-image: url("../img/banyantree.png"); }
+
+.turtle {
+  background-image: url("../img/turtlebay.png"); }
+
+.host {
+  background-image: url("../img/host.png");
+  background-position: left; }
 
 footer {
   padding: 20px;
@@ -156,4 +163,7 @@ footer {
       color: white; }
 
   .banyan {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/banyantree.png") center center; } }
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/banyantree.png") center center; }
+
+  .banyan {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/turtlebay.png") center center; } }
