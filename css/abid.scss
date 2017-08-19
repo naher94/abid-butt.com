@@ -177,6 +177,50 @@ footer{
 // Measurments pulled from foundation css file
 // Mobile Styling
 @media screen and (max-width: 40em) {
+  header{
+    padding: 40px;
+    .logo{
+      width: 70px;
+    }
+    .site-intro{
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    .linkedin{
+      width: 20px;
+    }
+    .twitter{
+      width: 22px;
+      margin-left: 10px;
+    }
+  }
+  .page-content{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .bio{
+    margin-top: 20px;
+    .name{
+      font-size: 30px;
+      text-align: center;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+  footer{
+    .logo{
+      width: 30px;
+    }
+    .linkedin{
+      width: 24px;
+      margin-top: 0px;
+    }
+    .twitter{
+      width: 26px;
+      margin-top: 3px;
+    }
+  }
   
 }
 
