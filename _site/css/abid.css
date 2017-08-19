@@ -9,6 +9,8 @@ header {
   background-color: #F4F4F4; }
   header .logo {
     width: 120px; }
+    header .logo:hover {
+      opacity: 0.7; }
   header .site-intro {
     margin-top: 60px; }
   header .linkedin {
@@ -21,6 +23,35 @@ header {
     margin-top: 5px; }
     header .twitter:hover {
       opacity: 0.7; }
+
+.page-content {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.profile-pic {
+  width: 100%; }
+
+p {
+  line-height: 1.4; }
+
+.name {
+  font-size: 40px;
+  line-height: 40px; }
+
+.button-resume {
+  width: 100%;
+  padding: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #000000;
+  text-align: center;
+  color: #000000;
+  margin-top: 10px;
+  font-weight: 700; }
+  .button-resume:hover {
+    background-color: #000000;
+    color: white;
+    text-decoration: none; }
 
 footer {
   padding: 20px;
