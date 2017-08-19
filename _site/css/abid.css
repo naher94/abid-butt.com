@@ -163,10 +163,12 @@ footer {
       color: white; }
 
   .banyan {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/banyantree.png") center center; }
+    background: linear-gradient(black, black), url("../img/banyantree.png") center center; }
 
   .turtle {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/turtlebay.png") center center; }
+    background: linear-gradient(black, black), url("../img/turtlebay.png") center center; }
 
   .host {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/host.png") center center; } }
+    background: linear-gradient(#f4f4f4, #f4f4f4), url("../img/host.png") center center; }
+    .host h2, .host h3, .host h4, .host p {
+      color: #000000; } }
