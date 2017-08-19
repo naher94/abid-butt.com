@@ -5,9 +5,22 @@ body, h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 header {
-  padding: 10px; }
+  padding: 70px;
+  background-color: #F4F4F4; }
   header .logo {
-    width: 100px; }
+    width: 120px; }
+  header .site-intro {
+    margin-top: 60px; }
+  header .linkedin {
+    width: 30px; }
+    header .linkedin:hover {
+      opacity: 0.7; }
+  header .twitter {
+    width: 32px;
+    margin-left: 20px;
+    margin-top: 5px; }
+    header .twitter:hover {
+      opacity: 0.7; }
 
 .column:last-child:not(:first-child),
 .columns:last-child:not(:first-child) {
