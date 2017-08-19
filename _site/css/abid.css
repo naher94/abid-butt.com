@@ -53,6 +53,32 @@ p {
     color: white;
     text-decoration: none; }
 
+.bio-section {
+  margin-bottom: 50px; }
+
+.featured {
+  background-color: #000000;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: url("../img/banyantree.png");
+  background-position: right;
+  background-repeat: no-repeat; }
+  .featured h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px; }
+  .featured h3 {
+    color: #D1D1D1;
+    font-size: 16px; }
+  .featured h4 {
+    color: #D1D1D1;
+    font-size: 18px; }
+  .featured p {
+    color: #D1D1D1;
+    margin-bottom: 0px; }
+
 footer {
   padding: 20px;
   background-color: #F4F4F4; }

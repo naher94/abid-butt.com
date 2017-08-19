@@ -10,6 +10,7 @@ $color-percentage: 10%;
 // Colors
 $ab-black: #000000;
 $ab-grey: #F4F4F4;
+$ab-white: #D1D1D1;
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
@@ -87,6 +88,40 @@ p{
     color: white;
     text-decoration: none;
   }
+}
+
+.bio-section{
+  margin-bottom: 50px;
+}
+
+.featured{
+  background-color: $ab-black;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: url("../img/banyantree.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  h2{
+    color: white;
+    font-size: 20px;
+    font-weight: $bold;
+    margin-bottom: 0px;
+  }
+  h3{
+    color: $ab-white;
+    font-size: 16px;
+  }
+  h4{
+    color: $ab-white;
+    font-size: 18px;
+  }
+  p{
+    color: $ab-white;
+    margin-bottom: 0px;
+    //font-size: 14px;
+  }
+  
 }
 
 footer{
