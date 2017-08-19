@@ -17,3 +17,8 @@ url: "http://abid-butt.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+collections:
+  features:
+    output: true
+    permalink: /:path
