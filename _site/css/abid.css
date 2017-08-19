@@ -180,6 +180,19 @@ footer {
     .bio p {
       font-size: 14px; }
 
+  .cv .section {
+    margin-bottom: 30px; }
+  .cv h2 {
+    font-size: 22px; }
+  .cv table {
+    font-size: 12px; }
+  .cv h3 {
+    font-size: 16px; }
+  .cv h4 {
+    font-size: 14px; }
+  .cv p {
+    font-size: 14px; }
+
   footer .logo {
     width: 30px; }
   footer .linkedin {
