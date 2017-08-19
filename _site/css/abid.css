@@ -88,6 +88,22 @@ p {
   background-image: url("../img/host.png");
   background-position: left; }
 
+.cv {
+  margin-top: 50px; }
+  .cv h2 {
+    font-weight: 300;
+    font-size: 26px; }
+  .cv table {
+    text-align: left;
+    font-weight: 400; }
+    .cv table tbody {
+      border: none; }
+      .cv table tbody tr:nth-child(even) {
+        background-color: white; }
+      .cv table tbody th {
+        font-weight: 400;
+        padding: 0.25rem 0.5rem 0.5rem; }
+
 footer {
   padding: 20px;
   background-color: #F4F4F4; }

@@ -134,6 +134,29 @@ p{
   background-position: left;
 }
 
+.cv{
+  margin-top: 50px;
+  //margin-bottom: 50px;
+  h2{
+    font-weight: $light;
+    font-size: 26px;
+  }
+  table{
+    text-align: left;
+    font-weight: $regular;
+    tbody {
+      border: none;
+      tr:nth-child(even){
+        background-color: white;
+      }
+      th{
+        font-weight: $regular;
+        padding: 0.25rem 0.5rem 0.5rem;
+      }
+    }
+  }
+}
+
 footer{
   padding: 20px;
   background-color: $ab-grey;
