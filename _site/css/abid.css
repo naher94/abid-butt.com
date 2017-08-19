@@ -5,10 +5,151 @@ body, h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 header {
-  padding: 10px; }
+  padding: 70px;
+  background-color: #F4F4F4; }
   header .logo {
-    width: 100px; }
+    width: 120px; }
+    header .logo:hover {
+      opacity: 0.7; }
+  header .site-intro {
+    margin-top: 60px; }
+  header .linkedin {
+    width: 30px; }
+    header .linkedin:hover {
+      opacity: 0.7; }
+  header .twitter {
+    width: 32px;
+    margin-left: 20px;
+    margin-top: 5px; }
+    header .twitter:hover {
+      opacity: 0.7; }
+
+.page-content {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.profile-pic {
+  width: 100%; }
+
+p {
+  line-height: 1.4; }
+
+.name {
+  font-size: 40px;
+  line-height: 40px; }
+
+.button-resume {
+  width: 100%;
+  padding: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #000000;
+  text-align: center;
+  color: #000000;
+  margin-top: 10px;
+  font-weight: 700; }
+  .button-resume:hover {
+    background-color: #000000;
+    color: white;
+    text-decoration: none; }
+
+.bio-section {
+  margin-bottom: 50px; }
+
+.featured {
+  background-color: #000000;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-position: right;
+  background-repeat: no-repeat; }
+  .featured h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px; }
+  .featured h3 {
+    color: #D1D1D1;
+    font-size: 16px; }
+  .featured h4 {
+    color: #D1D1D1;
+    font-size: 18px; }
+  .featured p {
+    color: #D1D1D1;
+    margin-bottom: 0px; }
+
+.banyan {
+  background-image: url("../img/banyantree.png"); }
+
+footer {
+  padding: 20px;
+  background-color: #F4F4F4; }
+  footer .footer-right {
+    text-align: right; }
+  footer .logo {
+    width: 60px; }
+  footer .linkedin {
+    margin-top: 10px;
+    width: 40px; }
+    footer .linkedin:hover {
+      opacity: 0.7; }
+  footer .twitter {
+    margin-top: 14px;
+    width: 42px;
+    margin-left: 20px; }
+    footer .twitter:hover {
+      opacity: 0.7; }
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none; }
 
 .column:last-child:not(:first-child),
 .columns:last-child:not(:first-child) {
   float: left; }
+
+@media screen and (max-width: 40em) {
+  header {
+    padding: 40px; }
+    header .logo {
+      width: 70px; }
+    header .site-intro {
+      margin-top: 30px;
+      font-size: 20px; }
+    header .linkedin {
+      width: 20px; }
+    header .twitter {
+      width: 22px;
+      margin-left: 10px; }
+
+  .page-content {
+    margin-top: 0px;
+    margin-bottom: 0px; }
+
+  .bio {
+    margin-top: 20px; }
+    .bio .name {
+      font-size: 30px;
+      text-align: center; }
+    .bio p {
+      font-size: 14px; }
+
+  footer .logo {
+    width: 30px; }
+  footer .linkedin {
+    width: 24px;
+    margin-top: 0px; }
+  footer .twitter {
+    width: 26px;
+    margin-top: 3px; }
+
+  .featured {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-position: center center; } }
