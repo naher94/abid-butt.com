@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="row">
+  {% assign news_order = site.news | sort: 'date' | reverse %}
+  {% for item in news_order %}
+    <div class="small-12 medium-8 columns">
+      <div class="news-container">
+        
+          {% if item.image %}
+          <img class="press-image" src="img/news/{{ item.image }}">
+          <span class="caption">{{ item.caption }}</span>
+          {% endif %}
+          
+        
+          {% if item.title %}
+        
+            {% if item.link %}
+            <a class="post-link" href="{{ item.link }}">
+              <span class="title">{{ item.title }}</span>
+              <span class="link">{{ item.link | truncate: 30 }}</span>
+            </a>
+            {% endif %}
+        
+            {% if item.pdf %}
+            <a class="post-link" href="{{ item.pdf }}">
+              <span class="title">{{ item.title }}</span>
+              <span class="link">{{ item.pdf }}</span>
+            </a>
+            {% endif %}
+        
+          {% endif %}
+        
+      </div>
+    </div>
+  {% endfor %}
+</div>
