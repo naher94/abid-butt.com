@@ -20,3 +20,6 @@ collections:
   features:
     output: true
     permalink: /:path
+    
+  news:
+    output: true
