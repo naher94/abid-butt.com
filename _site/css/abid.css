@@ -118,6 +118,11 @@ p {
   .cv .section {
     margin-bottom: 50px; }
 
+.news-container {
+  margin-bottom: 50px; }
+  .news-container .press-image {
+    margin-bottom: 10px; }
+
 footer {
   padding: 20px;
   background-color: #F4F4F4; }
@@ -192,6 +197,11 @@ footer {
     font-size: 14px; }
   .cv p {
     font-size: 14px; }
+
+  .news-container {
+    margin-bottom: 20px; }
+    .news-container .press-image {
+      margin-bottom: 6px; }
 
   footer .logo {
     width: 30px; }
