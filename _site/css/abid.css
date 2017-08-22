@@ -53,6 +53,22 @@ p {
     color: white;
     text-decoration: none; }
 
+.button-news {
+  display: inline-block;
+  padding: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #000000;
+  text-align: center;
+  color: #000000;
+  margin-top: 10px;
+  font-weight: 700;
+  margin-right: 20px; }
+  .button-news:hover {
+    background-color: #000000;
+    color: white;
+    text-decoration: none; }
+
 .bio-section {
   margin-bottom: 50px; }
 

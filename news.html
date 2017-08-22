@@ -9,7 +9,7 @@ layout: default
       <div class="news-container">
         
           {% if item.image %}
-          <img class="press-image" src="img/news/{{ item.image }}">
+          <img class="press-image" alt="{{ item.caption }}" src="img/news/{{ item.image }}">
           <span class="caption">{{ item.caption }}</span>
           {% endif %}
           
