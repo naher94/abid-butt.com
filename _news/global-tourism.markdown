@@ -4,6 +4,6 @@ title: "This is a title"
 link:
 image: global-tourism-closeup.jpg
 pdf:
-caption: This is where the caption goes
-date: 2016-02-22
+caption: Global Tourism Economy Forum; Macau
+date: 2014-05-22
 ---

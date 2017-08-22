@@ -4,6 +4,6 @@ title:
 link:
 image: chic.jpg
 pdf:
-caption: This is where the caption goes
+caption: China Hotel Investment Conference
 date: 2014-04-23
 ---

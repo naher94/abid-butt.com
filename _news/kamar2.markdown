@@ -4,6 +4,6 @@ title: "This is a title"
 link:
 image: kamar-panel.jpg
 pdf:
-caption: This is where the caption goes
-date: 2016-02-22
+caption: Hospitality Investment World; Indonesia
+date: 2014-04-22
 ---

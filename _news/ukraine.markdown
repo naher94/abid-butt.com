@@ -4,6 +4,6 @@ title: "This is a title"
 link:
 image: ukraine.jpg
 pdf:
-caption: This is where the caption goes
-date: 2016-02-22
+caption: CIS & Georgia Hospitality Investment Conference (iCON); Ukraine
+date: 2013-09-19
 ---
