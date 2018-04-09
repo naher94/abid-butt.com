@@ -241,8 +241,10 @@ footer {
   .banyan {
     background: linear-gradient(black, black), url("../img/banyantree.png") center center; }
 
-  .turtle {
-    background: linear-gradient(black, black), url("../img/turtlebay.png") center center; }
+  .dream {
+    background: linear-gradient(#f4f4f4, #f4f4f4), url("../img/dream.png") center center; }
+    .dream h2, .dream h3, .dream h4, .dream p {
+      color: #000000; }
 
   .host {
     background: linear-gradient(#f4f4f4, #f4f4f4), url("../img/host.png") center center; }
