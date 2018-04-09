@@ -341,8 +341,11 @@ footer{
   .banyan{
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url("../img/banyantree.png") center center;
   }
-  .turtle{
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url("../img/turtlebay.png") center center;
+  .dream{
+    background: linear-gradient(rgba($ab-grey, 1), rgba($ab-grey, 1)), url("../img/dream.png") center center;
+    h2, h3, h4, p{
+      color: $ab-black;
+    }
   }
   .host{
     background: linear-gradient(rgba($ab-grey, 1), rgba($ab-grey, 1)), url("../img/host.png") center center;
