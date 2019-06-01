@@ -1,0 +1,9 @@
+---
+layout: post
+title:
+link:
+image: chif2108-4.jpg
+pdf:
+caption: CHIF 2018 Shanghai
+date: 2018-08-05
+---
