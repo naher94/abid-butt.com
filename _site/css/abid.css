@@ -1,252 +1,108 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", sans-serif;
-  color: #000000;
-  font-weight: 400; }
+body, h1, h2, h3, h4, h5, h6 { font-family: "Lato", sans-serif; color: #000000; font-weight: 400; }
 
-header {
-  padding: 70px;
-  background-color: #F4F4F4; }
-  header .logo {
-    width: 120px; }
-    header .logo:hover {
-      opacity: 0.7; }
-  header .site-intro {
-    margin-top: 60px; }
-  header .linkedin {
-    width: 30px; }
-    header .linkedin:hover {
-      opacity: 0.7; }
-  header .twitter {
-    width: 32px;
-    margin-left: 20px;
-    margin-top: 5px; }
-    header .twitter:hover {
-      opacity: 0.7; }
+body { font-size: 20px; }
 
-.page-content {
-  margin-top: 50px;
-  margin-bottom: 50px; }
+header { padding: 70px; background-color: #F4F4F4; }
 
-.profile-pic {
-  width: 100%; }
+header .logo { width: 120px; }
 
-p {
-  line-height: 1.4; }
+header .logo:hover { opacity: 0.7; }
 
-.name {
-  font-size: 40px;
-  line-height: 40px; }
+header .site-intro { margin-top: 60px; }
 
-.button-resume {
-  width: 100%;
-  padding: 10px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #000000;
-  text-align: center;
-  color: #000000;
-  margin-top: 10px;
-  font-weight: 700; }
-  .button-resume:hover {
-    background-color: #000000;
-    color: white;
-    text-decoration: none; }
+header .linkedin { width: 30px; }
 
-.button-news {
-  display: inline-block;
-  padding: 10px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #000000;
-  text-align: center;
-  color: #000000;
-  margin-top: 10px;
-  font-weight: 700;
-  margin-right: 20px; }
-  .button-news:hover {
-    background-color: #000000;
-    color: white;
-    text-decoration: none; }
+header .linkedin:hover { opacity: 0.7; }
 
-.bio-section {
-  margin-bottom: 50px; }
+header .twitter { width: 32px; margin-left: 20px; margin-top: 5px; }
 
-.featured {
-  background-color: #000000;
-  color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-position: right;
-  background-repeat: no-repeat; }
-  .featured h2 {
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 0px; }
-  .featured h3 {
-    color: #D1D1D1;
-    font-size: 16px; }
-  .featured h4 {
-    color: #D1D1D1;
-    font-size: 18px; }
-  .featured p {
-    color: #D1D1D1;
-    margin-bottom: 0px; }
+header .twitter:hover { opacity: 0.7; }
 
-.banyan {
-  background-image: url("../img/banyantree.png"); }
+.page-content { margin-top: 50px; margin-bottom: 50px; }
 
-.turtle {
-  background-image: url("../img/turtlebay.png"); }
+.profile-pic { width: 100%; }
 
-.dream {
-  background-image: url("../img/dream.png");
-  background-position: left; }
+p { line-height: 1.4; }
 
-.host {
-  background-image: url("../img/host.png");
-  background-position: left; }
+.name { font-size: 40px; line-height: 40px; }
 
-.cv {
-  margin-top: 50px; }
-  .cv h2 {
-    font-weight: 300;
-    font-size: 28px; }
-  .cv table {
-    text-align: left;
-    font-weight: 400;
-    color: #6D6D6D; }
-    .cv table tbody {
-      border: none; }
-      .cv table tbody tr:nth-child(even) {
-        background-color: white; }
-      .cv table tbody th {
-        font-weight: 400;
-        padding: 0.25rem 0.5rem 0.5rem; }
-  .cv h3 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 0px;
-    line-height: 1.2; }
-  .cv h4 {
-    font-size: 16px;
-    font-weight: 400;
-    color: #6D6D6D; }
-  .cv p {
-    color: #6D6D6D; }
-  .cv .section {
-    margin-bottom: 50px; }
+.button-resume { width: 100%; padding: 10px; border-style: solid; border-width: 3px; border-color: #000000; text-align: center; color: #000000; margin-top: 10px; font-weight: 700; }
 
-.news-container {
-  margin-bottom: 50px; }
-  .news-container .press-image {
-    margin-bottom: 10px; }
+.button-resume:hover { background-color: #000000; color: white; text-decoration: none; }
 
-footer {
-  padding: 20px;
-  background-color: #F4F4F4; }
-  footer .footer-right {
-    text-align: right; }
-  footer .logo {
-    width: 60px;
-    opacity: 0.2; }
-  footer .linkedin {
-    margin-top: 10px;
-    width: 40px;
-    opacity: 0.2; }
-    footer .linkedin:hover {
-      opacity: 0.4; }
-  footer .twitter {
-    margin-top: 14px;
-    width: 42px;
-    margin-left: 20px;
-    opacity: 0.2; }
-    footer .twitter:hover {
-      opacity: 0.4; }
+.button-news { display: inline-block; padding: 10px; border-style: solid; border-width: 3px; border-color: #000000; text-align: center; color: #000000; margin-top: 10px; font-weight: 700; margin-right: 20px; }
 
-.no-select {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  user-drag: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none; }
+.button-news:hover { background-color: #000000; color: white; text-decoration: none; }
 
-.column:last-child:not(:first-child),
-.columns:last-child:not(:first-child) {
-  float: left; }
+.bio-section { margin-bottom: 50px; }
 
-@media screen and (max-width: 40em) {
-  header {
-    padding: 40px; }
-    header .logo {
-      width: 70px; }
-    header .site-intro {
-      margin-top: 30px;
-      font-size: 20px; }
-    header .linkedin {
-      width: 20px; }
-    header .twitter {
-      width: 22px;
-      margin-left: 10px; }
+.bio-section #hospitality-talks { color: #0900A7; font-weight: bold; }
 
-  .page-content {
-    margin-top: 0px;
-    margin-bottom: 0px; }
+.featured { background-color: #000000; color: white; padding-top: 100px; padding-bottom: 100px; background-position: right; background-repeat: no-repeat; }
 
-  .bio {
-    margin-top: 20px; }
-    .bio .name {
-      font-size: 30px;
-      text-align: center; }
-    .bio p {
-      font-size: 14px; }
+.featured h2 { color: white; font-size: 20px; font-weight: 700; margin-bottom: 0px; }
 
-  .cv .section {
-    margin-bottom: 30px; }
-  .cv h2 {
-    font-size: 22px; }
-  .cv table {
-    font-size: 12px; }
-  .cv h3 {
-    font-size: 16px; }
-  .cv h4 {
-    font-size: 14px; }
-  .cv p {
-    font-size: 14px; }
+.featured h3 { color: #D1D1D1; font-size: 16px; }
 
-  .news-container {
-    margin-bottom: 20px; }
-    .news-container .press-image {
-      margin-bottom: 6px; }
+.featured h4 { color: #D1D1D1; font-size: 18px; }
 
-  footer .logo {
-    width: 30px; }
-  footer .linkedin {
-    width: 24px;
-    margin-top: 0px; }
-  footer .twitter {
-    width: 26px;
-    margin-top: 3px; }
+.featured p { color: #D1D1D1; margin-bottom: 0px; }
 
-  .featured {
-    padding-top: 30px;
-    padding-bottom: 30px; }
-    .featured h2, .featured h3, .featured h4, .featured p {
-      color: white; }
+.banyan { background-image: url("../img/banyantree.png"); }
 
-  .banyan {
-    background: linear-gradient(black, black), url("../img/banyantree.png") center center; }
+.turtle { background-image: url("../img/turtlebay.png"); }
 
-  .dream {
-    background: linear-gradient(#f4f4f4, #f4f4f4), url("../img/dream.png") center center; }
-    .dream h2, .dream h3, .dream h4, .dream p {
-      color: #000000; }
+.dream { background-image: url("../img/dream.png"); background-position: left; }
 
-  .host {
-    background: linear-gradient(#f4f4f4, #f4f4f4), url("../img/host.png") center center; }
-    .host h2, .host h3, .host h4, .host p {
-      color: #000000; } }
+.host { background-image: url("../img/host.png"); background-position: left; }
+
+.cv { margin-top: 50px; }
+
+.cv h2 { font-weight: 300; font-size: 28px; }
+
+.cv table { text-align: left; font-weight: 400; color: #6D6D6D; }
+
+.cv table tbody { border: none; }
+
+.cv table tbody tr:nth-child(even) { background-color: white; }
+
+.cv table tbody th { font-weight: 400; padding: 0.25rem 0.5rem 0.5rem; }
+
+.cv h3 { font-size: 20px; font-weight: 700; margin-bottom: 0px; line-height: 1.2; }
+
+.cv h4 { font-size: 16px; font-weight: 400; color: #6D6D6D; }
+
+.cv p { color: #6D6D6D; }
+
+.cv .section { margin-bottom: 50px; }
+
+.news-container { margin-bottom: 50px; }
+
+.news-container .press-image { margin-bottom: 10px; }
+
+.industry a p { text-decoration: underline; }
+
+.industry a p:hover { color: #0900A7; }
+
+footer { padding: 20px; background-color: #F4F4F4; }
+
+footer .footer-right { text-align: right; }
+
+footer .logo { width: 60px; opacity: 0.2; }
+
+footer .linkedin { margin-top: 10px; width: 40px; opacity: 0.2; }
+
+footer .linkedin:hover { opacity: 0.4; }
+
+footer .twitter { margin-top: 14px; width: 42px; margin-left: 20px; opacity: 0.2; }
+
+footer .twitter:hover { opacity: 0.4; }
+
+.no-select { -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; user-drag: none; -moz-user-select: none; -webkit-user-drag: none; }
+
+.column:last-child:not(:first-child), .columns:last-child:not(:first-child) { float: left; }
+
+@media screen and (max-width: 40em) { header { padding: 40px; } header .logo { width: 70px; } header .site-intro { margin-top: 30px; font-size: 20px; } header .linkedin { width: 20px; } header .twitter { width: 22px; margin-left: 10px; } .page-content { margin-top: 0px; margin-bottom: 0px; } .bio { margin-top: 20px; } .bio .name { font-size: 30px; text-align: center; } .bio p { font-size: 14px; } .cv .section { margin-bottom: 30px; } .cv h2 { font-size: 22px; } .cv table { font-size: 12px; } .cv h3 { font-size: 16px; } .cv h4 { font-size: 14px; } .cv p { font-size: 14px; } .news-container { margin-bottom: 20px; } .news-container .press-image { margin-bottom: 6px; } footer .logo { width: 30px; } footer .linkedin { width: 24px; margin-top: 0px; } footer .twitter { width: 26px; margin-top: 3px; } .featured { padding-top: 30px; padding-bottom: 30px; } .featured h2, .featured h3, .featured h4, .featured p { color: white; } .banyan { background: linear-gradient(black, black), url("../img/banyantree.png") center center; } .dream { background: linear-gradient(#f4f4f4, #f4f4f4), url("../img/dream.png") center center; } .dream h2, .dream h3, .dream h4, .dream p { color: #000000; } .host { background: linear-gradient(#f4f4f4, #f4f4f4), url("../img/host.png") center center; } .host h2, .host h3, .host h4, .host p { color: #000000; } }
+
+/*# sourceMappingURL=abid.css.map */
