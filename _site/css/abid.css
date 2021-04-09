@@ -1,17 +1,45 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+@keyframes boing {
+  15% {
+    transform-origin: center center;
+    transform: scale(1.4, 1.2); }
+  40% {
+    transform-origin: center center;
+    transform: scale(0.9, 0.9); }
+  75% {
+    transform-origin: center center;
+    transform: scale(1.08, 1); }
+  100% {
+    transform-origin: center center;
+    transform: scale(1, 1); } }
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
   color: #000000;
   font-weight: 400; }
 
 body {
-  font-size: 20px; }
+  font-size: 18px; }
+  @media screen and (max-width: 40em) {
+    body {
+      font-size: 14px; } }
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 header {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #F4F4F4;
   margin-bottom: 8rem; }
+  @media screen and (max-width: 40em) {
+    header {
+      margin-bottom: 2rem; } }
   header .logo {
     width: 5rem; }
     header .logo:hover {
@@ -28,8 +56,7 @@ header {
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #F4F4F4;
-  margin-bottom: 8rem; }
+  background-color: #F4F4F4; }
   footer .logo {
     width: 5rem; }
     footer .logo:hover {
@@ -45,6 +72,9 @@ footer {
 
 .intro h1 {
   line-height: 3.5rem; }
+  @media screen and (max-width: 40em) {
+    .intro h1 {
+      line-height: 1.8rem; } }
 .intro .photo img {
   border-radius: 50%; }
 .intro .resume-button {
@@ -110,11 +140,21 @@ p {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 0px; }
+    @media screen and (max-width: 40em) {
+      .featured h2 {
+        font-size: 1.5rem;
+        margin-top: 1rem; } }
   .featured h3 {
     font-size: 1.8rem; }
+    @media screen and (max-width: 40em) {
+      .featured h3 {
+        font-size: 1.2rem; } }
   .featured h4 {
     font-size: 1.8rem;
     font-weight: 700; }
+    @media screen and (max-width: 40em) {
+      .featured h4 {
+        font-size: 1.2rem; } }
   .featured p {
     margin-bottom: 0px; }
 
@@ -152,6 +192,36 @@ p {
   user-drag: none;
   -moz-user-select: none;
   -webkit-user-drag: none; }
+
+.hospitality-talks .intro {
+  margin-bottom: 6rem; }
+  .hospitality-talks .intro img {
+    height: 7rem;
+    margin-bottom: 2rem; }
+  .hospitality-talks .intro p {
+    font-size: 2rem; }
+  .hospitality-talks .intro .social-container {
+    margin-top: 2rem; }
+    .hospitality-talks .intro .social-container a {
+      padding: 0.5rem; }
+  .hospitality-talks .intro .social-container a {
+    color: #000000; }
+    @media screen and (max-width: 40em) {
+      .hospitality-talks .intro .social-container a {
+        font-size: 1.5em; } }
+    .hospitality-talks .intro .social-container a:hover .fab, .hospitality-talks .intro .social-container a:hover .fas, .hospitality-talks .intro .social-container a:focus .fab, .hospitality-talks .intro .social-container a:focus .fas {
+      color: #0900A7;
+      animation: boing 300ms ease-out; }
+.hospitality-talks .session-container {
+  margin-bottom: 7rem; }
+  @supports (aspect-ratio: 16/9) {
+    .hospitality-talks .session-container iframe {
+      aspect-ratio: 16/9; } }
+  .hospitality-talks .session-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem; }
 
 .column:last-child:not(:first-child),
 .columns:last-child:not(:first-child) {
