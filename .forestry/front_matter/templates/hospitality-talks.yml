@@ -16,3 +16,5 @@ fields:
   label: date
   config:
     date_format: MM/DD/YYYY
+pages:
+- _hospitality-talks/test-session.md
