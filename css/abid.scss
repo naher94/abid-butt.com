@@ -290,9 +290,15 @@ p{
     img{
       height: 7rem;
       margin-bottom: 2rem;
+      @media screen and (max-width: 40em){
+        margin-bottom: 0.5rem;
+      }
     }
     p{
       font-size: 2rem;
+      @media screen and (max-width: 40em){
+        font-size: 1.3rem;
+      }
     }
     .social-container{
       margin-top: 2rem;
@@ -317,9 +323,15 @@ p{
   }
   .session-container{
     margin-bottom: 7rem;
+    @media screen and (max-width: 40em){
+      margin-bottom: 4rem;
+    }
     iframe{
       @supports(aspect-ratio:16/9){
         aspect-ratio: 16/9;
+      }
+      @media screen and (max-width: 40em){
+        height: 240px;
       }
     }
     h2{

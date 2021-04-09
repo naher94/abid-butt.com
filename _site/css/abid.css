@@ -198,8 +198,14 @@ p {
   .hospitality-talks .intro img {
     height: 7rem;
     margin-bottom: 2rem; }
+    @media screen and (max-width: 40em) {
+      .hospitality-talks .intro img {
+        margin-bottom: 0.5rem; } }
   .hospitality-talks .intro p {
     font-size: 2rem; }
+    @media screen and (max-width: 40em) {
+      .hospitality-talks .intro p {
+        font-size: 1.3rem; } }
   .hospitality-talks .intro .social-container {
     margin-top: 2rem; }
     .hospitality-talks .intro .social-container a {
@@ -214,9 +220,15 @@ p {
       animation: boing 300ms ease-out; }
 .hospitality-talks .session-container {
   margin-bottom: 7rem; }
+  @media screen and (max-width: 40em) {
+    .hospitality-talks .session-container {
+      margin-bottom: 4rem; } }
   @supports (aspect-ratio: 16/9) {
     .hospitality-talks .session-container iframe {
       aspect-ratio: 16/9; } }
+  @media screen and (max-width: 40em) {
+    .hospitality-talks .session-container iframe {
+      height: 240px; } }
   .hospitality-talks .session-container h2 {
     font-size: 2rem;
     font-weight: 700;
