@@ -1,0 +1,19 @@
+---
+label: Hospitality Talks
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: video
+  label: video
+- type: datetime
+  name: date
+  label: date
