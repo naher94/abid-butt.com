@@ -1,15 +1,28 @@
 ---
 layout: default
 ---
+<div class="hospitality-talks">
+    <section class="intro">
+        <h1 class="visually-hidden">Hospitality Talks</h1>
+        <img src="/img/hospitality-talks-logo.svg" alt="Hospitality Talks Logo">
+        <p>This forum, of global lodging and hospitality industry professionals, connects various stakeholders for active discussions.  Our mission is to foster conversations on issues facing the industry and identify ways to work together for the greater benefit.</p>
+        <div class="social-container">
+            <a href="{{ site.ht-youtube }}" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="{{ site.ht-facebook }}" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="{{ site.ht-linkedin }}" target="_blank"><i class="fab fab fa-linkedin fa-2x"></i></a>
+            <a href="{{ site.ht-podcast }}" target="_blank"><i class="fab fas fa-podcast fa-2x"></i></a>
+            <a href="{{ site.ht-spotify }}" target="_blank"><i class="fab fab fa-spotify fa-2x"></i></a>
 
-Hospitality Talks
-
-<div class="grid-x align-center">
-    {% for session in site.hospitality-talks %}
-        <div class="cell medium-8">
-            <iframe width="100%" height="480" src="{{ session.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h2>{{session.title}}</h2>
-            <p>{{session.description}}</p>
         </div>
-    {% endfor %}
+    </section>
+
+    <div class="grid-x align-center">
+        {% for session in site.hospitality-talks %}
+            <div class="cell medium-10 session-container">
+                <iframe width="100%" height="480" src="{{ session.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2>{{session.title}}</h2>
+                <p>{{session.description}}</p>
+            </div>
+        {% endfor %}
+    </div>
 </div>
