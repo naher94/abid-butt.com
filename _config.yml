@@ -23,3 +23,6 @@ collections:
     
   news:
     output: true
+  
+  hospitality-talks:
+    output: false
