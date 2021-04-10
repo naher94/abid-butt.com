@@ -1,6 +1,6 @@
 ---
 title: Best strategies to deal with financial crisis in light of poor industry performance.
-description: Lodging industry has been experiencing the worst performance in recent
+description: The lodging industry has been experiencing the worst performance in recent
   history and hotels continue to be in survival mode. With depleted cash reserves,
   hotel owners are wondering how they will be able to make their monthly mortgage
   payments and payroll. Under the current circumstances, historical data does not
