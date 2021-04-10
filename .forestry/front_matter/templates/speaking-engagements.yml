@@ -17,6 +17,7 @@ fields:
   name: location
   label: Location
 pages:
+- _speaking-engagements/Korea.md
 - _speaking-engagements/UAE1.md
 - _speaking-engagements/brazil1.md
 - _speaking-engagements/china2.md
