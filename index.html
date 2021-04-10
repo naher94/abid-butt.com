@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="intro grid-x grid-padding-x">
-  <!-- TODO grid-padding-x not working here on mobile causing >100% width -->
+  <!-- TODO grid-padding-x not working here on mobile causing >100% width  Negative Margin is causing the issue-->
   <div class="cell small-6 medium-4 photo">
     <img src="/img/abid-2021.jpg" alt="Abid Butt">
   </div>
@@ -81,8 +81,8 @@ layout: default
 
 
 <div class="grid-x align-center">
-  <div class="small-12 medium-8 cell cv">
-    <section class="career-summary">
+  <div class="small-12 medium-8 cell grid-x grid-padding-x cv">
+    <section class="career-summary cell">
       <h2>Career Summary</h2>
       <table>
         <tr>
@@ -118,7 +118,7 @@ layout: default
       </table>
     </section>
 
-    <section class="skills">
+    <section class="skills cell">
       <h2>Skills</h2>
       <p>Extensive domestic and international hospitality business expertise.</p>
       <p>A leader with the clarity of vision; tenacity to achieve clearly-set goals; passion for delivering the best quality product; and an innate sense of loyalty and responsibility towards all stakeholders. Lead teams through creativity, dedication with revitalization and alignment of business goals.</p>
