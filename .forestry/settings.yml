@@ -21,12 +21,9 @@ sections:
   match: "**/*"
 - type: directory
   path: _hospitality-talks
-  label: Hospitality talks
+  label: Hospitality Talks
   create: all
   match: "**/*"
-- type: jekyll-posts
-  label: Posts
-  create: all
 - type: jekyll-pages
   label: Pages
   create: all
