@@ -164,6 +164,9 @@ footer{
 }
 
 .intro{
+  // TODO these margin overrides to fix a issue with grid-padding-x on mobile layout
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   h1{
     line-height: 3.5rem;
     @media screen and (max-width: 40em) {
@@ -171,6 +174,9 @@ footer{
     }
   }
   .photo{
+    @media screen and (max-width: 40em) {
+      margin-bottom: 1rem;
+    }
     img{
       border-radius: 50%;
     }
