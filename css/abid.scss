@@ -296,6 +296,9 @@ p{
 
 .event{
   font-size: 1.5rem;
+  @media screen and (max-width: 40em){
+    font-size: 1rem;
+  }
   .metadata{
     font-style: italic;
     margin-bottom: 0;
@@ -419,6 +422,9 @@ p{
 // Measurments pulled from foundation css file
 // Mobile Styling
 @media screen and (max-width: 40em) {
+  h1{
+    padding: 0 0.625rem;
+  }
 }
 
 // Tablet Styling
