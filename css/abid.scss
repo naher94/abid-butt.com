@@ -89,9 +89,10 @@ header{
     }
   }
   .nav-item{
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
+    font-weight: $bold;
     border-radius: $pill-radius;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     color: $ab-black;
     &:hover{
@@ -112,9 +113,9 @@ footer{
     }
   }
   .nav-item{
-    font-size: 1.5rem;
     border-radius: $pill-radius;
-    padding: 0.5rem 1.5rem;
+    font-weight: $bold;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     color: $ab-black;
     &:hover{
