@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: _speaking-engagements
+  label: Speaking Engagements
+  create: all
+  match: "**/*"
+- type: directory
   path: _features
   label: Features
   create: all
