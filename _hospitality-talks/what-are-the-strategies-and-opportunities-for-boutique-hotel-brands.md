@@ -1,5 +1,5 @@
 ---
-title: What are the strategies and opportunities for Boutique Hotel Brands
+title: What are the strategies and opportunities for boutique hotel brands
 description: Hospitality Talks is delighted to bring together three unique boutique
   brands together in our next episode “Boutique Hotel Brands – Strategies & Opportunities”.
   Sam-Erik Ruttmann and I will be joined by three remarkable professionals, Roland
