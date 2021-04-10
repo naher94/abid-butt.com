@@ -121,6 +121,24 @@ footer{
       background-color: $ab-grey;
     }
   }
+  .nav-container{
+    margin-bottom: 4rem;
+  }
+  .social-container {
+    a{
+      padding: .7rem;
+      color: $ab-black;
+      @media screen and (max-width: 40em){
+        font-size: 1.5em;
+      }
+      &:hover, &:focus{
+        .fab, .fas{
+          color: $hospitality-talks-blue;
+          animation: boing 300ms ease-out;
+        }
+      }
+    }
+  }
 }
 
 .intro{
