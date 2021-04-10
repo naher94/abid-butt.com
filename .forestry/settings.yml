@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: _hospitality-talks
+  label: Hospitality Talks
+  create: all
+  match: "**/*"
+- type: directory
   path: _speaking-engagements
   label: Speaking Engagements
   create: all
@@ -17,11 +22,6 @@ sections:
 - type: directory
   path: _news
   label: Speaking Images
-  create: all
-  match: "**/*"
-- type: directory
-  path: _hospitality-talks
-  label: Hospitality Talks
   create: all
   match: "**/*"
 - type: jekyll-pages
