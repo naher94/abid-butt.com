@@ -18,7 +18,7 @@ $hospitality-talks-blue-dark: darken($hospitality-talks-blue,20%);
 
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
 $lato: 'Lato', sans-serif;
 $light: 300;
 $regular: 400;
@@ -293,6 +293,19 @@ p{
     -moz-user-select: none;
     -webkit-user-drag: none;
 }
+
+.event{
+  font-size: 1.5rem;
+  .metadata{
+    font-style: italic;
+    margin-bottom: 0;
+  }
+  .title{
+    font-weight: $bold;
+  }
+}
+
+
 //******* Hospitality Talks
 .hospitality-talks{
   .intro{

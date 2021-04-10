@@ -32,7 +32,10 @@ collections:
     permalink: /:path
     
   news:
-    output: true
+    output: false
   
   hospitality-talks:
+    output: false
+
+  speaking-engagements:
     output: false
