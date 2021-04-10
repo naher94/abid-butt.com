@@ -35,7 +35,7 @@ layout: default
     {% endfor %}
   </div>
 
-  <div class="grid-x cell small-12 medium-6 grid-padding-x">
+  <div class="grid-y cell small-12 medium-6 grid-padding-x">
     {% assign speaking_order = site.speaking-engagements | sort: 'date' | reverse %}
     {% for event in speaking_order %}
     <div class="event cell">
