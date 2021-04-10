@@ -27,10 +27,6 @@ ab-instagram: https://www.instagram.com/abidbutt12220
 markdown: kramdown
 
 collections:
-  features:
-    output: true
-    permalink: /:path
-    
   news:
     output: false
   
