@@ -77,7 +77,7 @@ header{
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: $ab-white;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   @media screen and (max-width: 40em) {
     margin-bottom: 2rem;
   }
@@ -260,17 +260,6 @@ p{
   margin-bottom: 50px;
   .press-image{
     margin-bottom: 10px;
-  }
-}
-
-.industry{
-  a{
-    p{
-      text-decoration: underline;
-      &:hover{
-        color: $hospitality-talks-blue;
-      }
-    }
   }
 }
 
