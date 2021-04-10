@@ -4,13 +4,15 @@ hide_body: true
 fields:
 - type: text
   name: event-type
-  label: event-type
+  label: Event Type
+  description: Panelist, Presentation etc.
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: text
   name: event-name
-  label: event-name
+  label: Event Name
+  description: Name of the Event eg. Conference
 - type: text
   name: location
-  label: location
+  label: Location
