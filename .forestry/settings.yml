@@ -15,11 +15,6 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: _features
-  label: Features
-  create: all
-  match: "**/*"
-- type: directory
   path: _news
   label: Speaking Images
   create: all
