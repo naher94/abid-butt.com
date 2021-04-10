@@ -14,6 +14,8 @@ $ab-white: #F4F4F4;
 $ab-deep-grey: #6D6D6D;
 $ab-grey: #D1D1D1;
 $hospitality-talks-blue: #0900A7;
+$hospitality-talks-blue-dark: darken($hospitality-talks-blue,20%);
+
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
@@ -228,7 +230,6 @@ p{
   p{
     margin-bottom: 0px;
   }
-
 }
 
 
@@ -339,6 +340,44 @@ p{
       font-weight: $bold;
       margin-top: 1rem;
       margin-bottom: 0.5rem;
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+  .banner{
+    background-color: rgba($hospitality-talks-blue, 0.1);
+    padding: 3rem 6rem;
+    border-radius: 30px;
+    margin-bottom: 7rem;
+    @media screen and (max-width: 40em){
+      margin-bottom: 4rem;
+      padding: 1.5rem;
+    }
+    img{
+      @media screen and (max-width: 40em){
+        margin-bottom: 2rem;
+      }
+    }
+    .subscribe-button{
+      background-color: $hospitality-talks-blue;
+      border-radius: $pill-radius;
+      padding: 1rem 2rem;
+      color: white;
+      font-weight: $bold;
+      font-size: 1.2rem;
+      transition: all 0.20s ease-in-out;
+
+      @media screen and (max-width: 40em){
+        padding: 0.5rem 1rem;
+      }
+      span{
+        margin-right: 0.5rem;
+      }
+      &:hover{
+        background-color: $hospitality-talks-blue-dark;
+        transition: all 0.20s ease-in-out;
+      }
     }
   }
 }
