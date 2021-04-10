@@ -36,7 +36,7 @@ header {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #F4F4F4;
-  margin-bottom: 8rem; }
+  margin-bottom: 4rem; }
   @media screen and (max-width: 40em) {
     header {
       margin-bottom: 2rem; } }
@@ -69,6 +69,17 @@ footer {
     color: #000000; }
     footer .nav-item:hover {
       background-color: #D1D1D1; }
+  footer .nav-container {
+    margin-bottom: 4rem; }
+  footer .social-container a {
+    padding: .7rem;
+    color: #000000; }
+    @media screen and (max-width: 40em) {
+      footer .social-container a {
+        font-size: 1.5em; } }
+    footer .social-container a:hover .fab, footer .social-container a:hover .fas, footer .social-container a:focus .fab, footer .social-container a:focus .fas {
+      color: #0900A7;
+      animation: boing 300ms ease-out; }
 
 .intro h1 {
   line-height: 3.5rem; }
@@ -178,11 +189,6 @@ p {
   .news-container .press-image {
     margin-bottom: 10px; }
 
-.industry a p {
-  text-decoration: underline; }
-  .industry a p:hover {
-    color: #0900A7; }
-
 .no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -234,6 +240,36 @@ p {
     font-weight: 700;
     margin-top: 1rem;
     margin-bottom: 0.5rem; }
+  .hospitality-talks .session-container p {
+    margin-bottom: 0; }
+.hospitality-talks .banner {
+  background-color: rgba(9, 0, 167, 0.1);
+  padding: 3rem 6rem;
+  border-radius: 30px;
+  margin-bottom: 7rem; }
+  @media screen and (max-width: 40em) {
+    .hospitality-talks .banner {
+      margin-bottom: 4rem;
+      padding: 1.5rem; } }
+  @media screen and (max-width: 40em) {
+    .hospitality-talks .banner img {
+      margin-bottom: 2rem; } }
+  .hospitality-talks .banner .subscribe-button {
+    background-color: #0900A7;
+    border-radius: 200px;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.20s ease-in-out; }
+    @media screen and (max-width: 40em) {
+      .hospitality-talks .banner .subscribe-button {
+        padding: 0.5rem 1rem; } }
+    .hospitality-talks .banner .subscribe-button span {
+      margin-right: 0.5rem; }
+    .hospitality-talks .banner .subscribe-button:hover {
+      background-color: #040041;
+      transition: all 0.20s ease-in-out; }
 
 .column:last-child:not(:first-child),
 .columns:last-child:not(:first-child) {
