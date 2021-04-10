@@ -16,7 +16,7 @@ sections:
   match: "**/*"
 - type: directory
   path: _news
-  label: News
+  label: Speaking Images
   create: all
   match: "**/*"
 - type: directory
