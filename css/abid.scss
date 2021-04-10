@@ -191,6 +191,7 @@ footer{
     text-align: center;
     color: $ab-black;
     font-weight: $bold;
+    transition: all 0.20s ease-in-out;
     &:hover{
       background-color: $ab-black;
       color: white;
@@ -431,8 +432,9 @@ p{
         margin-right: 0.5rem;
       }
       &:hover{
-        background-color: $hospitality-talks-blue-dark;
-        transition: all 0.20s ease-in-out;
+        // background-color: $hospitality-talks-blue-dark;
+        background-color: $ab-black;
+        // transition: all 0.20s ease-in-out;
       }
     }
   }
