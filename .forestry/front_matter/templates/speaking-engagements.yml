@@ -1,0 +1,16 @@
+---
+label: Speaking Engagements
+hide_body: true
+fields:
+- type: text
+  name: event-type
+  label: event-type
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: event-name
+  label: event-name
+- type: text
+  name: location
+  label: location
