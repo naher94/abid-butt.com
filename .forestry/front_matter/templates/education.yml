@@ -15,3 +15,5 @@ fields:
   name: location
   label: Location
   description: City, State
+pages:
+- _education/strategic-leadership.md
