@@ -3,6 +3,29 @@ layout: default
 ---
 
 <h1 class="academic">Academic Engagements</h1>
+<div class="grid-x">
+  <div class="grid-x cell small-12 medium-6 grid-padding-x">
+    TODO logos go here
+  </div>
+
+  <div class="grid-y cell small-12 medium-6 grid-padding-x">
+    {% assign academic_order = site.academic-engagements | sort: 'date' | reverse %}
+    {% for event in academic_order %}
+    <div class="event cell">
+      <p class="metadata">
+        {{event.role}} - {{event.location}}
+      </p>
+      <p class="title">{{event.title}}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+
+
+
 <div class="section">
   <p>Adjunct Faculty – Georgetown University - USA</p>
   <p>Guest Lecturer – Johnson & Wales University - USA</p>

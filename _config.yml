@@ -35,3 +35,6 @@ collections:
 
   speaking-engagements:
     output: false
+
+  academic-engagements:
+    output: false
