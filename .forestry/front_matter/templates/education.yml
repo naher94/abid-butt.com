@@ -4,13 +4,14 @@ hide_body: true
 fields:
 - type: text
   name: institution
-  label: institution
+  label: Institution
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: text
   name: title
-  label: title
+  label: Degree
 - type: text
   name: location
-  label: location
+  label: Location
+  description: City, State
