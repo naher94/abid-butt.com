@@ -16,5 +16,6 @@ fields:
   label: Location
   description: City, State
 pages:
+- _education/graduate-certificate-finance.md
 - _education/realestate-development-hotel-investments.md
 - _education/strategic-leadership.md
