@@ -461,6 +461,9 @@ p{
       @supports(aspect-ratio:16/9){
         aspect-ratio: 16/9;
       }
+      @supports not(aspect-ratio:16/9){
+        height: 480px;
+      }
       @media screen and (max-width: 40em){
         height: 240px;
       }
