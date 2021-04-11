@@ -23,6 +23,8 @@ sections:
   label: Academic Engagements
   create: all
   match: "**/*"
+  templates:
+  - academic-engagements
 - type: directory
   path: _news
   label: Speaking Images
