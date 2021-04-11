@@ -7,28 +7,28 @@ sections:
 - type: directory
   path: _hospitality-talks
   label: Hospitality Talks
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - hospitality-talks
 - type: directory
   path: _speaking-engagements
   label: Speaking Engagements
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - speaking-engagements
 - type: directory
   path: _academic-engagements
   label: Academic Engagements
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - academic-engagements
 - type: directory
   path: _education
   label: Education
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - education
