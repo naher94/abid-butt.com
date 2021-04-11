@@ -391,6 +391,22 @@ p{
   }
 }
 
+.error-404{
+  @media screen and (max-width: 40em){
+    // TODO same error as above
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+  }
+  h1{
+    font-weight: $bold;
+    font-size: 4rem;
+  }
+  p{
+    font-size: 2rem;
+  }
+}
+
 
 //******* Hospitality Talks
 .hospitality-talks{
