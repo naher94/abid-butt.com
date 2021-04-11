@@ -1,0 +1,16 @@
+---
+label: Education
+hide_body: true
+fields:
+- type: text
+  name: institution
+  label: institution
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: title
+  label: title
+- type: text
+  name: location
+  label: location
