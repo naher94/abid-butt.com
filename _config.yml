@@ -38,3 +38,6 @@ collections:
 
   academic-engagements:
     output: false
+  
+  education:
+    output: false

@@ -9,15 +9,29 @@ layout: default
   </div>
 
   <div class="grid-y cell small-12 medium-6 grid-padding-x">
-    {% assign academic_order = site.academic-engagements | sort: 'date' | reverse %}
-    {% for event in academic_order %}
-    <div class="event cell">
-      <p class="metadata">
-        {{event.role}} - {{event.location}}
-      </p>
-      <p class="title">{{event.title}}</p>
+    <div class="academic-engagements">
+      {% assign academic_order = site.academic-engagements | sort: 'date' | reverse %}
+      {% for event in academic_order %}
+      <div class="event cell">
+        <p class="metadata">
+          {{event.role}} - {{event.location}}
+        </p>
+        <p class="title">{{event.title}}</p>
+      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
+    <div class="education">
+      <h3>Education</h3>
+      {% assign education_order = site.education | sort: 'date' | reverse %}
+      {% for event in education_order %}
+      <div class="event cell">
+        <p class="metadata">
+          {{event.institution}} - {{event.location}}
+        </p>
+        <p class="title">{{event.title}}</p>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
