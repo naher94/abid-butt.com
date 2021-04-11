@@ -30,6 +30,8 @@ sections:
   label: Education
   create: all
   match: "**/*"
+  templates:
+  - education
 - type: directory
   path: _news
   label: Speaking Images
