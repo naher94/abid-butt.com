@@ -8,8 +8,8 @@ layout: default
     TODO logos go here
   </div>
 
-  <div class="grid-y cell small-12 medium-6 grid-padding-x">
-    <div class="academic-engagements">
+  <div class="grid-x cell small-12 medium-6 grid-padding-x">
+    <div class="academic-engagements cell">
       {% assign academic_order = site.academic-engagements | sort: 'date' | reverse %}
       {% for event in academic_order %}
       <div class="event cell">
@@ -20,7 +20,7 @@ layout: default
       </div>
       {% endfor %}
     </div>
-    <div class="education">
+    <div class="education cell">
       <h3>Education</h3>
       {% assign education_order = site.education | sort: 'date' | reverse %}
       {% for event in education_order %}
