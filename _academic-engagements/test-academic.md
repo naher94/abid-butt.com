@@ -1,6 +1,6 @@
 ---
 role: Advisory Board
-date: 2014-06-01T04:00:00.000+00:00
+date: 2005-01-01 00:00:00 -0500
 title: Tulsa Junior College
 location: USA
 
