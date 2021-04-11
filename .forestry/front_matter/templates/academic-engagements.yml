@@ -28,5 +28,8 @@ fields:
     display_utc: false
 pages:
 - _academic-engagements/brigham-young-university.md
+- _academic-engagements/johns-hopkins.md
+- _academic-engagements/lipscomb-university.md
+- _academic-engagements/mcgill-university.md
 - _academic-engagements/tulsa-junior-college.md
 - _academic-engagements/windward-community-college.md
