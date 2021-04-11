@@ -1,13 +1,31 @@
 <header>
-  <div class="row">
-    <div class="small-12 columns">
-      <a href="{{ site.url }}"><img class="logo" src="../img/logo.svg" alt="Logo"></a>
-      <h1 class="site-intro">A creative and dynamic leader with a passion for tourism and hospitality.</h1>
-      
-      <a href="../news.html"><div class="button-news">In The News</div></a>
-      
-      <a href="https://www.linkedin.com/in/abidbutt/"><img class="linkedin" alt="Linkedin" src="../img/linkedin.svg"></a>
-      <a href="https://twitter.com/abmhb"><img class="twitter" alt="Twitter" src="../img/twitter.svg"></a>
+  <div class="grid-container grid-x">
+    <div class="small-12 cell grid-x align-middle">
+      <div class="shrink cell">
+        <a href="{{ site.url }}"><img class="logo" src="../img/logo.svg" alt="Logo"></a>
+      </div>
+      <div class="cell auto grid-x align-right">
+        <div class="cell small-12 medium-shrink nav-item-container">
+        <a href="{% link index.html %}" class="nav-item">
+          About
+        </a>
+      </div>
+      <div class="cell small-12 medium-shrink nav-item-container">
+        <a href="{% link hospitality-talks.html %}" class="cell nav-item">
+          Hospitality Talks
+        </a>
+      </div>
+      <div class="cell small-12 medium-shrink nav-item-container">
+        <a href="{% link speaking-engagement.html %}" class="cell  nav-item">
+            Speaking Engagements
+          </a>
+        </div>
+        <div class="cell small-12 medium-shrink nav-item-container">
+          <a href="{% link academic-engagement.html %}" class="cell nav-item">
+            Academic Engagements
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </header>

@@ -6,21 +6,47 @@
 
 // Numbers
 $color-percentage: 10%;
+$pill-radius: 200px;
 
 // Colors
 $ab-black: #000000;
-$ab-grey: #F4F4F4;
+$ab-white: #F4F4F4;
 $ab-deep-grey: #6D6D6D;
-$ab-white: #D1D1D1;
+$ab-grey: #D1D1D1;
 $hospitality-talks-blue: #0900A7;
+$hospitality-talks-blue-dark: darken($hospitality-talks-blue,20%);
+
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
 $lato: 'Lato', sans-serif;
 $light: 300;
 $regular: 400;
 $bold: 700;
 $black: 900;
+
+// Animation
+@keyframes boing{
+  15%{
+    transform-origin: center center;
+    transform:scale(1.4, 1.2)
+  }
+
+  40%{
+    transform-origin: center center;
+    transform:scale(0.9, 0.9)
+  }
+
+  75%{
+    transform-origin: center center;
+    transform:scale(1.08, 1)
+  }
+
+  100%{
+    transform-origin: center center;
+    transform:scale(1, 1)
+  }
+}
 //******* End of Variables
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -30,70 +56,196 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 body{
-  font-size: 20px;
+  font-size: 18px;
+  @media screen and (max-width: 40em) {
+    font-size: 14px;
+  }
+}
+
+// Visually hide any element (mostly text) accessibly.
+.visually-hidden{
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 header{
-  padding: 70px;
-  background-color: $ab-grey;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: $ab-white;
+  margin-bottom: 4rem;
+  @media screen and (max-width: 40em) {
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
   .logo{
-    width: 120px;
+    width: 5rem;
+    @media screen and (max-width: 40em) {
+      width: 6rem;
+      margin-left: 0.5rem;
+    }
+    transition: all 0.20s ease-in-out;;
     &:hover{
-      opacity: 0.7;
+      transform: scale(1.1);
     }
   }
-  .site-intro{
-    margin-top: 60px;
-  }
-  .linkedin{
-    width: 30px;
-    &:hover{
-      opacity: 0.7;
+  .nav-item-container{
+    @media screen and (max-width: 40em) {
+      margin-bottom: 0.5rem;
+      text-align: right;
     }
   }
-  .twitter{
-    width: 32px;
-    margin-left: 20px;
-    margin-top: 5px;
+  .nav-item{
+    // font-size: 1.5rem;
+    font-weight: $bold;
+    border-radius: $pill-radius;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: $ab-black;
+    @media screen and (max-width: 40em) {
+      width: 100% !important;
+      text-align: right;
+    }
     &:hover{
-      opacity: 0.7;
+      background-color: $ab-grey;
     }
   }
 }
 
-.page-content{
-  margin-top: 50px;
-  margin-bottom: 50px;
+footer{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: $ab-white;
+  margin-top: 6rem;
+  @media screen and (max-width: 40em) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .logo{
+    width: 5rem;
+    transition: all 0.20s ease-in-out;;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  .nav-item{
+    border-radius: $pill-radius;
+    font-weight: $bold;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: $ab-black;
+    &:hover{
+      background-color: $ab-grey;
+    }
+  }
+  .nav-container{
+    margin-bottom: 4rem;
+    @media screen and (max-width: 40em){
+      margin-bottom: 2rem;
+      text-align: right;
+      font-size: 1.5rem;
+    }
+  }
+  .logo-container{
+    @media screen and (max-width: 40em){
+      text-align: right;
+      padding-right: 0.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .social-container {
+    @media screen and (max-width: 40em){
+      text-align: right;
+    }
+    a{
+      padding: .7rem;
+      color: $ab-black;
+      @media screen and (max-width: 40em){
+        font-size: 1.5em;
+      }
+      i{
+        @media screen and (max-width: 40em){
+          font-size: 1.5em;
+        }
+      }
+      &:hover, &:focus{
+        .fab, .fas{
+          color: $hospitality-talks-blue;
+          animation: boing 300ms ease-out;
+        }
+      }
+    }
+  }
+  .nav-item-container{
+    @media screen and (max-width: 40em){
+      margin-right: -0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .ab-social{
+    margin-bottom: 1.5rem;
+    @media screen and (max-width: 40em){
+      margin-bottom: 2rem;
+    }
+  }
+  .social-label{
+    margin-bottom: 0;
+    @media screen and (max-width: 40em){
+      font-size: 1.5em;
+      font-weight: $bold;
+      margin-bottom: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+  .copyright{
+    margin-bottom: 0.7rem;
+  }
 }
 
-.profile-pic{
-  width: 100%;
+.intro{
+  // TODO these margin overrides to fix a issue with grid-padding-x on mobile layout
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  h1{
+    line-height: 3.5rem;
+    @media screen and (max-width: 40em) {
+      line-height: 1.8rem;
+    }
+  }
+  .photo{
+    @media screen and (max-width: 40em) {
+      margin-bottom: 1rem;
+    }
+    img{
+      border-radius: 50%;
+    }
+  }
+  .resume-button{
+    border-radius: $pill-radius;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    border-style: solid;
+    border-width: 3px;
+    border-color: $ab-black;
+    text-align: center;
+    color: $ab-black;
+    font-weight: $bold;
+    transition: all 0.20s ease-in-out;
+    &:hover{
+      background-color: $ab-black;
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
 p{
   line-height: 1.4;
-}
-
-.name{
-  font-size: 40px;
-  line-height: 40px;
-}
-
-.button-resume{
-  width: 100%;
-  padding: 10px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: $ab-black;
-  text-align: center;
-  color: $ab-black;
-  margin-top: 10px;
-  font-weight: $bold;
-  &:hover{
-    background-color: $ab-black;
-    color: white;
-    text-decoration: none;
-  }
 }
 
 .button-news{
@@ -114,69 +266,71 @@ p{
   }
 }
 
-.bio-section{
-  margin-bottom: 50px;
-  #hospitality-talks{
-    color: $hospitality-talks-blue;
-    font-weight: bold;
-  }
-}
-
 .featured{
-  background-color: $ab-black;
-  color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-position: right;
-  background-repeat: no-repeat;
+  margin-top: 8rem;
+  .featured-item{
+    margin-bottom: 6rem;
+  }
+  .image-container{
+    position: relative;
+    @media screen and (max-width: 40em) {
+      margin: auto;
+    }
+    img{
+      border-radius: 50%;
+    }
+    .logo-container{
+      background-color: $ab-black;
+      border-radius: $pill-radius;
+      position: absolute;
+      top: 0;
+      padding: 1rem;
+      @media screen and (max-width: 40em) {
+        padding: 0.5rem;
+      }
+      img{
+        width: 8rem;
+        @media screen and (max-width: 40em) {
+          width: 5rem;
+        }
+      }
+    }
+  }
   h2{
-    color: white;
-    font-size: 20px;
+    font-size: 2.2rem;
     font-weight: $bold;
     margin-bottom: 0px;
+    @media screen and (max-width: 40em) {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
   }
   h3{
-    color: $ab-white;
-    font-size: 16px;
+    font-size: 1.8rem;
+    @media screen and (max-width: 40em) {
+      font-size: 1.2rem;
+    }
   }
   h4{
-    color: $ab-white;
-    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: $bold;
+    @media screen and (max-width: 40em) {
+      font-size: 1.2rem;
+    }
   }
   p{
-    color: $ab-white;
     margin-bottom: 0px;
-    //font-size: 14px;
   }
-
 }
 
-.banyan{
-  background-image: url("../img/banyantree.png");
-}
-.turtle{
-  background-image: url("../img/turtlebay.png");
-}
-.dream{
-  background-image: url("../img/dream.png");
-  background-position: left;
-}
-.host{
-  background-image: url("../img/host.png");
-  background-position: left;
-}
 
 .cv{
-  margin-top: 50px;
-  //margin-bottom: 50px;
   h2{
-    font-weight: $light;
-    font-size: 28px;
+    font-weight: $bold;
+    font-size: 2.4rem;
   }
   table{
     text-align: left;
-    font-weight: $regular;
-    color: $ab-deep-grey;
     tbody {
       border: none;
       tr:nth-child(even){
@@ -188,22 +342,8 @@ p{
       }
     }
   }
-  h3{
-    font-size: 20px;
-    font-weight: $bold;
-    margin-bottom: 0px;
-    line-height: 1.2;
-  }
-  h4{
-    font-size: 16px;
-    font-weight: $regular;
-    color: $ab-deep-grey;
-  }
-  p{
-    color: $ab-deep-grey;
-  }
-  .section{
-    margin-bottom: 50px;
+  .career-summary{
+    margin-bottom: 4rem;
   }
 }
 
@@ -211,49 +351,6 @@ p{
   margin-bottom: 50px;
   .press-image{
     margin-bottom: 10px;
-  }
-}
-
-.industry{
-  a{
-    p{
-      text-decoration: underline;
-      &:hover{
-        color: $hospitality-talks-blue;
-      }
-    }
-  }
-}
-
-footer{
-  padding: 20px;
-  background-color: $ab-grey;
-  .footer-left{
-
-  }
-  .footer-right{
-    text-align: right;
-  }
-  .logo{
-    width: 60px;
-    opacity: 0.2;
-  }
-  .linkedin{
-    margin-top: 10px;
-    width: 40px;
-    opacity: 0.2;
-    &:hover{
-      opacity: 0.4;
-    }
-  }
-  .twitter{
-    margin-top: 14px;
-    width: 42px;
-    margin-left: 20px;
-    opacity: 0.2;
-    &:hover{
-      opacity: 0.4;
-    }
   }
 }
 
@@ -268,6 +365,154 @@ footer{
     -webkit-user-drag: none;
 }
 
+.speaking, .academic{
+  font-weight: $bold;
+  padding: 0 0.625rem;
+}
+
+.academic-logo-container{
+  img{
+    margin-bottom: 2rem;
+  }
+}
+
+.event{
+  font-size: 1.5rem;
+  @media screen and (max-width: 40em){
+    font-size: 1rem;
+  }
+  .metadata{
+    font-style: italic;
+    margin-bottom: 0;
+  }
+  .title{
+    font-weight: $bold;
+  }
+}
+
+.education{
+  margin-top: 5rem;
+  h3{
+    font-weight: $bold;
+  }
+}
+
+.error-404{
+  @media screen and (max-width: 40em){
+    // TODO same error as above
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+  }
+  h1{
+    font-weight: $bold;
+    font-size: 4rem;
+  }
+  p{
+    font-size: 2rem;
+  }
+}
+
+
+//******* Hospitality Talks
+.hospitality-talks{
+  .intro{
+    margin-bottom: 6rem;
+    img{
+      height: 7rem;
+      margin-bottom: 2rem;
+      @media screen and (max-width: 40em){
+        margin-bottom: 0.5rem;
+      }
+    }
+    p{
+      font-size: 2rem;
+      @media screen and (max-width: 40em){
+        font-size: 1.3rem;
+      }
+    }
+    .social-container{
+      margin-top: 2rem;
+      a{
+        padding: 0.5rem;
+      }
+    }
+    .social-container {
+      a{
+        color: $ab-black;
+        @media screen and (max-width: 40em){
+          font-size: 1.5em;
+        }
+        &:hover, &:focus{
+          .fab, .fas{
+            color: $hospitality-talks-blue;
+            animation: boing 300ms ease-out;
+          }
+        }
+      }
+    }
+  }
+  .session-container{
+    margin-bottom: 7rem;
+    @media screen and (max-width: 40em){
+      margin-bottom: 4rem;
+    }
+    iframe{
+      @supports(aspect-ratio:16/9){
+        aspect-ratio: 16/9;
+      }
+      @media screen and (max-width: 40em){
+        height: 240px;
+      }
+    }
+    h2{
+      font-size: 2rem;
+      font-weight: $bold;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+  .banner{
+    background-color: rgba($hospitality-talks-blue, 0.1);
+    padding: 3rem 6rem;
+    border-radius: 30px;
+    margin-bottom: 7rem;
+    @media screen and (max-width: 40em){
+      margin-bottom: 4rem;
+      padding: 1.5rem;
+    }
+    img{
+      @media screen and (max-width: 40em){
+        margin-bottom: 2rem;
+      }
+    }
+    .subscribe-button{
+      background-color: $hospitality-talks-blue;
+      border-radius: $pill-radius;
+      padding: 1rem 2rem;
+      color: white;
+      font-weight: $bold;
+      font-size: 1.2rem;
+      transition: all 0.20s ease-in-out;
+
+      @media screen and (max-width: 40em){
+        padding: 0.5rem 1rem;
+      }
+      span{
+        margin-right: 0.5rem;
+      }
+      &:hover{
+        background-color: $ab-black;
+      }
+    }
+  }
+}
+//******* End of Hospitality Talks
+
+
 //******* Foundation Overrides
 .column:last-child:not(:first-child),
 .columns:last-child:not(:first-child) {
@@ -281,98 +526,7 @@ footer{
 // Measurments pulled from foundation css file
 // Mobile Styling
 @media screen and (max-width: 40em) {
-  header{
-    padding: 40px;
-    .logo{
-      width: 70px;
-    }
-    .site-intro{
-      margin-top: 30px;
-      font-size: 20px;
-    }
-    .linkedin{
-      width: 20px;
-    }
-    .twitter{
-      width: 22px;
-      margin-left: 10px;
-    }
-  }
-  .page-content{
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .bio{
-    margin-top: 20px;
-    .name{
-      font-size: 30px;
-      text-align: center;
-    }
-    p{
-      font-size: 14px;
-    }
-  }
-  .cv{
-    .section{
-      margin-bottom: 30px;
-    }
-    h2{
-      font-size: 22px;
-    }
-    table{
-      font-size: 12px;
-    }
-    h3{
-      font-size: 16px;
-    }
-    h4{
-      font-size: 14px;
-    }
-    p{
-      font-size: 14px;
-    }
-  }
-  .news-container{
-    margin-bottom: 20px;
-    .press-image{
-      margin-bottom: 6px;
-    }
-  }
-  footer{
-    .logo{
-      width: 30px;
-    }
-    .linkedin{
-      width: 24px;
-      margin-top: 0px;
-    }
-    .twitter{
-      width: 26px;
-      margin-top: 3px;
-    }
-  }
-  .featured{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    h2, h3, h4, p{
-      color: white;
-    }
-  }
-  .banyan{
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url("../img/banyantree.png") center center;
-  }
-  .dream{
-    background: linear-gradient(rgba($ab-grey, 1), rgba($ab-grey, 1)), url("../img/dream.png") center center;
-    h2, h3, h4, p{
-      color: $ab-black;
-    }
-  }
-  .host{
-    background: linear-gradient(rgba($ab-grey, 1), rgba($ab-grey, 1)), url("../img/host.png") center center;
-        h2, h3, h4, p{
-      color: $ab-black;
-    }
-  }
+
 }
 
 // Tablet Styling

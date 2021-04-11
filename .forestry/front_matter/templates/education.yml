@@ -1,0 +1,28 @@
+---
+label: Education
+hide_body: true
+fields:
+- type: text
+  name: institution
+  label: Institution
+- type: datetime
+  name: date
+  label: Date
+- type: text
+  name: title
+  label: Degree
+- type: text
+  name: location
+  label: Location
+  description: City, State
+pages:
+- _education/assocaites-in-science-hotel-food-beverage-management.md
+- _education/associates-in-science-culinary-arts-magna-cum-laude.md
+- _education/bachelor-of-science-food-service-management.md
+- _education/bachelor-of-science-hotel-restaurant-institutional-management.md
+- _education/doctor-of-business-administration-in-international-hotel-tourism-management-honoris-causa.md
+- _education/graduate-certificate-finance.md
+- _education/master-of-business-administration.md
+- _education/masters-of-science-real-estate.md
+- _education/realestate-development-hotel-investments.md
+- _education/strategic-leadership.md

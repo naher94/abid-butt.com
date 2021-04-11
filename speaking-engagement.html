@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<h1 class="speaking">Speaking Engagements</h1>
+<div class="grid-x">
+  <div class="grid-x cell small-12 medium-6 grid-padding-x">
+    {% assign news_order = site.news | sort: 'date' | reverse %}
+    {% for item in news_order %}
+      <div class="small-12 cell">
+        <div class="news-container">
+          
+          {% if item.image %}
+          <img class="press-image no-select" alt="{{ item.caption }}" src="/img/news/{{ item.image }}">
+          <span class="caption">{{ item.caption }}</span>
+          {% endif %}
+          
+          {% if item.title %}
+            {% if item.link %}
+            <a class="post-link" href="{{ item.link }}">
+              <span class="title">{{ item.title }}</span>
+              <span class="link">{{ item.link | truncate: 30 }}</span>
+            </a>
+            {% endif %}
+        
+            {% if item.pdf %}
+            <a class="post-link" href="{{ item.pdf }}">
+              <span class="title">{{ item.title }}</span>
+              <span class="link">{{ item.pdf }}</span>
+            </a>
+            {% endif %}
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="grid-y cell small-12 medium-6 grid-padding-x">
+    {% assign speaking_order = site.speaking-engagements | sort: 'date' | reverse %}
+    {% for event in speaking_order %}
+    <div class="event cell">
+      <p class="metadata">
+        {% if event.event-type %}
+          {{event.event-type}} -
+        {% endif %}
+        {{event.location}}
+        {{event.date | date: "%Y"}}
+      </p>
+      <p class="title">{{event.event-name}}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

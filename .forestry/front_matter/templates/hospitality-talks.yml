@@ -1,0 +1,23 @@
+---
+label: Hospitality Talks
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: Session Title
+- type: textarea
+  name: description
+  label: Description
+- type: text
+  name: video
+  label: Youtube URL
+- type: datetime
+  name: date
+  label: date
+  config:
+    date_format: MM/DD/YYYY
+pages:
+- _hospitality-talks/best-strategies-to-deal-with-financial-crisis-in-light-of-poor-industry-performance.md
+- _hospitality-talks/how-to-build-an-innovative-culture-and-cope-with-changing-circumstances.md
+- _hospitality-talks/what-are-the-strategies-and-opportunities-for-boutique-hotel-brands.md
+- _hospitality-talks/what-is-the-impact-of-digital-transformation-on-hospitality.md

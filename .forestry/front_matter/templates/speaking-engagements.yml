@@ -1,0 +1,43 @@
+---
+label: Speaking Engagements
+hide_body: true
+fields:
+- type: text
+  name: event-type
+  label: Event Type
+  description: Panelist, Presentation etc.
+- type: datetime
+  name: date
+  label: Date
+- type: text
+  name: event-name
+  label: Event Name
+  description: Name of the Event eg. Conference
+- type: text
+  name: location
+  label: Location
+pages:
+- _speaking-engagements/HK1.md
+- _speaking-engagements/Korea.md
+- _speaking-engagements/UAE1.md
+- _speaking-engagements/brazil1.md
+- _speaking-engagements/china2.md
+- _speaking-engagements/china3-1.md
+- _speaking-engagements/china3.md
+- _speaking-engagements/germany1.md
+- _speaking-engagements/greece.md
+- _speaking-engagements/india1.md
+- _speaking-engagements/india2.md
+- _speaking-engagements/indonesia.md
+- _speaking-engagements/indonesia2.md
+- _speaking-engagements/macau.md
+- _speaking-engagements/mexico1.md
+- _speaking-engagements/singapore1.md
+- _speaking-engagements/singapore2-1.md
+- _speaking-engagements/singapore2.md
+- _speaking-engagements/srilanka1.md
+- _speaking-engagements/uk1.md
+- _speaking-engagements/ukraine.md
+- _speaking-engagements/us1.md
+- _speaking-engagements/us2.md
+- _speaking-engagements/us3.md

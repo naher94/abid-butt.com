@@ -4,24 +4,45 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: jekyll-posts
-  label: Posts
+- type: directory
+  path: _hospitality-talks
+  label: Hospitality Talks
+  create: documents
+  match: "**/*"
+  templates:
+  - hospitality-talks
+- type: directory
+  path: _speaking-engagements
+  label: Speaking Engagements
+  create: documents
+  match: "**/*"
+  templates:
+  - speaking-engagements
+- type: directory
+  path: _academic-engagements
+  label: Academic Engagements
+  create: documents
+  match: "**/*"
+  templates:
+  - academic-engagements
+- type: directory
+  path: _education
+  label: Education
+  create: documents
+  match: "**/*"
+  templates:
+  - education
+- type: directory
+  path: _news
+  label: Speaking Images
   create: all
+  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
-- type: directory
-  path: _features
-  label: Features
-  create: all
-  match: "**/*"
-- type: directory
-  path: _news
-  label: News
-  create: all
-  match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: img
+public_path: "/img"
+
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"

@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<h1 class="academic">Academic Engagements</h1>
+<div class="grid-x">
+  <div class="academic-logo-container cell small-12 medium-6 grid-padding-x">
+    <div class="cell small-6 medium-12"><img src="/img/johnson-wales-logo.svg" alt="Johnson & Wales Logo"></div>
+    <div class="cell small-6 medium-12"><img src="/img/johns-hopkins-logo.svg" alt="Johns Hopkins Logo"></div>
+    <div class="cell small-6 medium-12"><img src="/img/cornell-logo.svg" alt="Cornell Logo"></div>
+    <div class="cell small-6 medium-12"><img src="/img/university-phoenix-logo.svg" alt="University of Phoenix Logo"></div>
+    <div class="cell small-6 medium-12"><img src="/img/georgetown-logo.svg" alt="Georgetown Logo"></div>
+    <div class="cell small-6"><img src="/img/nus-logo.svg" alt="National University of Singapore Logo"></div>
+      <div class="cell small-6"><img src="/img/ipade-logo.svg" alt="IPADE Logo"></div>
+
+
+  </div>
+
+  <div class="grid-x cell small-12 medium-6 grid-padding-x">
+    <div class="academic-engagements cell">
+      {% assign academic_order = site.academic-engagements | sort: 'date' | reverse %}
+      {% for event in academic_order %}
+      <div class="event cell">
+        <p class="metadata">
+          {{event.role}} - {{event.location}}
+        </p>
+        <p class="title">{{event.title}}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="education cell">
+      <h3>Education</h3>
+      {% assign education_order = site.education | sort: 'date' | reverse %}
+      {% for event in education_order %}
+      <div class="event cell">
+        <p class="metadata">
+          {{event.institution}} - {{event.location}}
+        </p>
+        <p class="title">{{event.title}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
