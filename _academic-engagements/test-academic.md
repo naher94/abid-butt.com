@@ -1,7 +1,7 @@
 ---
-role: Panelist
-date: 2014-06-01 04:00:00 +0000
-title: Brazil Hospitality Investment Conference
-location: Brazil
+role: Advisory Board
+date: 2014-06-01T04:00:00.000+00:00
+title: Tulsa Junior College
+location: USA
 
 ---
