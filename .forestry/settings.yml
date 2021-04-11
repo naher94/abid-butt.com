@@ -26,6 +26,11 @@ sections:
   templates:
   - academic-engagements
 - type: directory
+  path: _education
+  label: Education
+  create: all
+  match: "**/*"
+- type: directory
   path: _news
   label: Speaking Images
   create: all
