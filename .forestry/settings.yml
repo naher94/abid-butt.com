@@ -5,15 +5,24 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: _academic-engagements
+  label: Academic Engagements
+  create: all
+  match: "**/*"
+- type: directory
   path: _hospitality-talks
   label: Hospitality Talks
   create: all
   match: "**/*"
+  templates:
+  - hospitality-talks
 - type: directory
   path: _speaking-engagements
   label: Speaking Engagements
   create: all
   match: "**/*"
+  templates:
+  - speaking-engagements
 - type: directory
   path: _news
   label: Speaking Images
