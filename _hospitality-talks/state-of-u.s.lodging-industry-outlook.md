@@ -1,5 +1,5 @@
 ---
-title: State of U.S. Lodging Industry & Outlook
+title: State of the U.S. Lodging Industry & Outlook
 description: We all know that the pandemic has been devastating to the hospitality
   industry with business travel essentially non-existent and recovery to 2019 levels
   projected in 2023/24. Leisure travel is expected to return first, particularly with
