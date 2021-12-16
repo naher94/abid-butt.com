@@ -33,6 +33,9 @@ layout: default
       {% endif %}
       <h4>{{role.role-title}}</h4>
       <p>{{role.description}}</p>
+      {% if role.link %}
+      {{ role.link }}
+      {% endif %}
     </div>
   </div>
   {%- endfor -%}
@@ -44,6 +47,11 @@ layout: default
     <section class="career-summary cell">
       <h2>Career Summary</h2>
       <table>
+        <tr>
+          <th>2019 – Current</th>
+          <th>Managing Director</th>
+          <th>AB Ambassadors</th>
+        </tr>
         <tr>
           <th>2017 – 2019</th>
           <th>Chief Executive Officer - AMEA</th>
