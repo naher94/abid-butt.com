@@ -270,6 +270,11 @@ p{
   margin-top: 8rem;
   .featured-item{
     margin-bottom: 6rem;
+    &:nth-child(odd){
+      .image-container{
+        order: 2;
+      }
+    }
   }
   .image-container{
     position: relative;

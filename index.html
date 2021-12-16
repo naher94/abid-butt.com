@@ -17,66 +17,25 @@ layout: default
 </section>
 
 <section class="featured grid-x">
-  <div class="cell grid-x featured-item grid-padding-x align-middle">
-    <div class="cell small-10 medium-5 image-container medium-order-2">
-      <img src="/img/dream.jpg" alt="">
-      <div class="logo-container">
-        <img src="/img/dream-logo.svg" alt="">
-      </div>
-    </div>
-    <div class="cell small-12 medium-auto medium-order-1">
-      <h2>Dream Hotel Group</h2>
-      <h3>Corporate Office – New York/Thailand</h3>
-      <h4>Chief Executive Officer - AMEA</h4>
-      <p>Responsible for investment portfolio and raising capital for various projects while guiding the company’s strategic priorities with a long term view to creating stakeholder value. Also responsible for continued growth and global expansion efforts of Dream Hotel Group and its portfolio of life style brands; Dream Hotels, Time Hotels, The Chatwal and Unscripted hotels in established and emerging urban and resort destinations.</p>
-    </div>
-  </div>
-
+  {% assign featured_order = site.roles | sort: 'display-order' %}
+  {%- for role in featured_order -%}
   <div class="cell grid-x featured-item grid-padding-x align-middle">
     <div class="cell small-10 medium-5 image-container">
-      <img src="/img/banyan-tree.jpg" alt="">
+      <img src="/img/{{ role.brand-image }}" alt="">
       <div class="logo-container">
-        <img src="/img/banyan-logo.svg" alt="">
+        <img src="/img/{{ role.logo }}" alt="">
       </div>
     </div>
     <div class="cell small-12 medium-auto">
-      <h2>Banyan Tree Hotels & Resorts</h2>
-    <h3>Corporate Headquarters – Singapore</h3>
-    <h4>Chief Executive Officer</h4>
-    <p>As principal author and tactician of financial and growth strategies, directed overall organization with forty-two hotels in fifteen countries around the globe. Represented the company in various industry conferences through participation in industry discussions and speaking engagements. Established strong relationships with key stake holders and developers for management contracts.</p>
+      <h2>{{role.company}}</h2>
+      {% if role.location %}
+      <h3>{{role.location}}</h3>
+      {% endif %}
+      <h4>{{role.role-title}}</h4>
+      <p>{{role.description}}</p>
     </div>
   </div>
-
-  <div class="cell grid-x featured-item grid-padding-x align-middle">
-    <div class="cell small-10 medium-5 image-container medium-order-2">
-      <img src="/img/marriott-marquee.jpg" alt="">
-      <div class="logo-container">
-        <img src="/img/host-logo.svg" alt="">
-      </div>
-    </div>
-    <div class="cell small-12 medium-auto medium-order-1">
-      <h2>Host Hotels & Resorts</h2>
-      <h3>Corporate Headquarters – Bethesda, Maryland</h3>
-      <h4>Vice President - Asset Management</h4>
-      <p>Responsible for a portfolio of first class and luxury hotel assets ranging from 15 to 20 properties that total from 5,000 to 8,000 guest rooms and approximately $700 to $900 million in total asset value in the Americas and Asia. The key responsibilities include value preservation and enhancement of individual assets to maximize the value of the entire portfolio through development and implementation of short, intermediate and long-term strategies. Conduct due diligence during acquisition and develop exit strategies when appropriate.  Ensure that property specific compliance requirements are completed including accounting and quarterly reporting of financial statements, requirements of ground lessors, third-party lender requirements, settlement agreements, local taxing and zoning authorities.</p>
-    </div>
-  </div>
-
-  <div class="cell grid-x featured-item grid-padding-x align-middle">
-    <div class="cell small-10 medium-5 image-container">
-      <img src="/img/turtle-bay.jpg" alt="">
-      <div class="logo-container">
-        <img src="/img/benchmark-logo.svg" alt="">
-      </div>
-    </div>
-    <div class="cell small-12 medium-auto">
-    <h2>Benchmark Hospitality</h2>
-    <h3>Turtle Bay Resort – Oahu, Hawaii</h3>
-    <h4>Vice President & General Manager</h4>
-    <p>Responsible for repositioning and complete operation of this full service, self-contained destination resort with golf, tennis, stables, spa facilities. Initiated and headed a destination group to market the North Shore as an independent destination.  Board member for North Shore Chamber of Commerce and served as an ambassador for the Windward Community College.
-    </p>
-    </div>
-  </div>
+  {%- endfor -%}
 </section>
 
 
