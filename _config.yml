@@ -41,3 +41,6 @@ collections:
   
   education:
     output: false
+  
+  roles:
+    output: false
