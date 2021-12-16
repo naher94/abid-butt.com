@@ -5,5 +5,5 @@ description: AB Ambassadors is an independent global tourism and hospitality adv
 logo: ambassadors-logo.svg
 brand-image: ambassadors.jpg
 display-order: 1
-link: <a href="mailto:me@abid-butt.com" target="_blank" class="featured-button">Get in Touch</a>
+link: <a href="mailto:me@abid-butt.com?subject=AB Ambassadors" target="_blank" class="featured-button">Get in Touch</a>
 ---
