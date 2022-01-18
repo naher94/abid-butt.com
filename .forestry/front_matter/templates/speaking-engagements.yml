@@ -16,6 +16,11 @@ fields:
 - type: text
   name: location
   label: Location
+- name: link
+  type: text
+  config:
+    required: false
+  label: Link
 pages:
 - _speaking-engagements/HK1.md
 - _speaking-engagements/Korea.md
