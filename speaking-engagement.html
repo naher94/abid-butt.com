@@ -39,6 +39,10 @@ layout: default
     {% assign speaking_order = site.speaking-engagements | sort: 'date' | reverse %}
     {% for event in speaking_order %}
     <div class="event cell">
+      <!-- TODO add an link here swipe underline -->
+      {% if event.link %}
+        <a href="{{ event.link }}" target="_blank" class="speaking-link">
+      {% endif %}
       <p class="metadata">
         {% if event.event-type %}
           {{event.event-type}} -
@@ -46,7 +50,14 @@ layout: default
         {{event.location}}
         {{event.date | date: "%Y"}}
       </p>
-      <p class="title">{{event.event-name}}</p>
+      <p class="title">{{event.event-name}}
+        {% if event.link %}
+        <i class="fas fa-link" aria-hidden="true"></i>
+        {% endif %}
+      </p>
+      {% if event.link %}
+        </a>
+      {% endif %}
     </div>
     {% endfor %}
   </div>
