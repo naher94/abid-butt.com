@@ -433,6 +433,7 @@ p{
 
 .event{
   font-size: 1.5rem;
+  margin-bottom: 0.5rem;
   @media screen and (max-width: 40em){
     font-size: 1rem;
   }
@@ -442,6 +443,7 @@ p{
   }
   .title{
     font-weight: $bold;
+    margin-bottom: 0;
   }
 }
 
@@ -452,8 +454,7 @@ p{
   }
 }
 
-///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
+//Used on featured item
 .slide-spin-link{
   text-decoration: none;
   .fa-link{
@@ -471,40 +472,30 @@ p{
     @include swipe-underline($aba-orange, true);
   }
 }
-// TODO might use for the speaking links
-// .resource-link{
-//   background-color: white;
-//   color: red;
-//   padding: 1rem;
-//   border-radius: 10px;
-//   margin-bottom: 0.5rem;
-//   .title{
-//     font-size: 1.5rem;
-//   }
-//   .description{
-//     font-size: 1rem;
-//     line-height: 1.3rem;
-//   }
-// }
-
-// .resource-link{
-//   margin-bottom: 1em;
-//   color: inherit;
-//   &:hover{
-//     color: inherit;
-//     .resource{
-//       .title{
-//         @include swipe-underline-hover(false);
-//       }
-//       .fa-link{
-//         transform: rotate(360deg);
-//       }
-//     }
-//   }
-// }
-///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
-
+//Used on speaking items
+.speaking-link{
+  color: $ab-black;
+  &:visited{
+    color: $ab-black;
+  }
+  &:hover{
+    text-decoration: none;
+    .title{
+      @include swipe-underline-hover(false);
+    }
+    .fa-link{
+      transform: rotate(360deg);
+    }
+  }
+  .title{
+    @include swipe-underline(rgba($hospitality-talks-blue,0.3), false);
+  }
+  .fa-link{
+    margin-inline-start: 0.25rem;
+    font-size: .7em;
+    transition: transform .3s;
+  }
+}
 
 .error-404{
   @media screen and (max-width: 40em){
