@@ -5,7 +5,7 @@ description: AB Ambassadors is an independent global tourism and hospitality adv
 logo: ambassadors-logo.svg
 logo-alt: AB Ambassadors Logo
 brand-image: ambassadors.jpg
-brand-image-alt: Hotel lobby
+brand-image-alt: Atrium lobby image looking at the skylight.
 display-order: 1
 link: https://abambassadors.com
 ---
