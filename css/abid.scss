@@ -13,6 +13,7 @@ $ab-black: #000000;
 $ab-white: #F4F4F4;
 $ab-deep-grey: #6D6D6D;
 $ab-grey: #D1D1D1;
+$aba-orange: #F18E34;
 $hospitality-talks-blue: #0900A7;
 $hospitality-talks-blue-dark: darken($hospitality-talks-blue,20%);
 
@@ -47,6 +48,32 @@ $black: 900;
     transform:scale(1, 1)
   }
 }
+
+//******* End of A Tag Underline Expand Styling
+@mixin swipe-underline($color,$inline-hover) {
+  display: inline;
+  background: linear-gradient($color, $color);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 10px; 
+  transition: background-size .3s;
+  @if $inline-hover {
+    &:hover{
+      background-size: 100% 10px;
+    }
+  }
+}
+
+//// Use when you want to trigger the over from a different element
+@mixin swipe-underline-hover($is-important) {
+  @if $is-important {
+    background-size: 100% 10px !important;
+  }
+  @else{
+    background-size: 100% 10px;
+  }
+}
+
 //******* End of Variables
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -424,6 +451,60 @@ p{
     font-weight: $bold;
   }
 }
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+.slide-spin-link{
+  text-decoration: none;
+  .fa-link{
+    margin-inline-start: 0.25rem;
+    font-size: .7em;
+    transition: transform .3s;
+  }
+  &:hover{
+    text-decoration: none;
+    .fa-link{
+      transform: rotate(360deg);
+    }
+  }
+  h2{
+    @include swipe-underline($aba-orange, true);
+  }
+}
+// TODO might use for the speaking links
+// .resource-link{
+//   background-color: white;
+//   color: red;
+//   padding: 1rem;
+//   border-radius: 10px;
+//   margin-bottom: 0.5rem;
+//   .title{
+//     font-size: 1.5rem;
+//   }
+//   .description{
+//     font-size: 1rem;
+//     line-height: 1.3rem;
+//   }
+// }
+
+// .resource-link{
+//   margin-bottom: 1em;
+//   color: inherit;
+//   &:hover{
+//     color: inherit;
+//     .resource{
+//       .title{
+//         @include swipe-underline-hover(false);
+//       }
+//       .fa-link{
+//         transform: rotate(360deg);
+//       }
+//     }
+//   }
+// }
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
 
 .error-404{
   @media screen and (max-width: 40em){
