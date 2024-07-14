@@ -201,7 +201,7 @@ footer{
         }
       }
       &:hover, &:focus{
-        .fab, .fas{
+        .fa-brands, .fa-solid{
           color: $hospitality-talks-blue;
           animation: boing 300ms ease-out;
         }
@@ -544,7 +544,7 @@ p{
           font-size: 1.5em;
         }
         &:hover, &:focus{
-          .fab, .fas{
+          .fa-brands, .fa-solid{
             color: $hospitality-talks-blue;
             animation: boing 300ms ease-out;
           }
