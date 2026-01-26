@@ -6,5 +6,5 @@ logo: assets-logo.svg
 logo-alt: Assets Group Logo
 brand-image: waldorf-astoria.jpg
 brand-image-alt: Aerial photo of the Waldorf Astoria in Maldives
-display-order: 0
+display-order: 1
 ---
