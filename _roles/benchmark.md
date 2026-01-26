@@ -8,4 +8,5 @@ logo-alt: Benchmark Hotels & Resorts Logo
 brand-image: turtle-bay.jpg
 brand-image-alt: Areal picture of hotel building next to water.
 display-order: 5
+published: false
 ---

@@ -6,6 +6,6 @@ logo: ambassadors-logo.svg
 logo-alt: AB Ambassadors Logo
 brand-image: ambassadors.jpg
 brand-image-alt: Atrium lobby image looking at the skylight.
-display-order: 1
+display-order: 0
 link: https://abambassadors.com
 ---

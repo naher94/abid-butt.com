@@ -13,6 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://abid-butt.com" # the base hostname & protocol for your site
 
+ht-url: https://abambassadors.com/hospitality-talks.html
 ht-youtube: https://www.youtube.com/channel/UCVBfsbg4K5sq6aPljJdWDBg
 ht-facebook: https://www.facebook.com/groups/hospitalitytalks/
 ht-linkedin: https://www.linkedin.com/groups/10512845/
