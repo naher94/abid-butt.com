@@ -7,7 +7,7 @@ hero: true
   {% assign featured_order = site.roles | sort: 'display-order' %}
   {%- for role in featured_order -%}
   <div class="cell grid-x featured-item grid-padding-x align-middle">
-    <div class="cell small-10 medium-5 image-container">
+    <div class="cell small-8 medium-5 image-container">
       <img src="/img/{{ role.brand-image }}" alt="{{role.logo-alt}}">
       <div class="logo-container">
         <img src="/img/{{ role.logo }}" alt="{{role.brand-image-alt}}">
