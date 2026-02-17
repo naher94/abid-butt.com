@@ -480,9 +480,17 @@ p{
       }
     }
   }
-  .career-summary{
-    margin-bottom: 4rem;
-  }
+  // .career-summary{
+  //   margin-bottom: 4rem;
+  // }
+}
+
+.resume-card{
+  margin-block: 2rem;
+  margin-block-end: 3rem;
+  background-color: $ab-white;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 
