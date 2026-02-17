@@ -225,6 +225,28 @@ footer{
   .copyright{
     margin-bottom: 0.7rem;
   }
+  .email-wrapper{
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    padding: .7rem;
+    color: $ab-black;
+    @media screen and (max-width: 40em){
+      font-size: 1.5em;
+    }
+    &:hover, &:focus{
+      .fa-solid{
+        color: $hospitality-talks-blue;
+        animation: boing 300ms ease-out;
+      }
+    }
+    .copied{
+      // font-size: 0.5em;
+      left: -20%;
+      right: unset;
+      font-weight: $bold;
+    }
+  }
 }
 
 .hero-page header{
