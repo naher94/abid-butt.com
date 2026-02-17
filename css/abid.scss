@@ -121,14 +121,7 @@ header{
       transform: scale(1.1);
     }
   }
-  .nav-item-container{
-    @media screen and (max-width: 40em) {
-      // margin-bottom: 0.5rem;
-      // text-align: right;
-    }
-  }
   .nav-item{
-    // font-size: 1.5rem;
     font-weight: $bold;
     border-radius: $pill-radius;
     padding: 0.5rem 1rem;
