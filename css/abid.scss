@@ -592,6 +592,9 @@ p{
   }
   .text-content{
     margin-inline-start: 1em;
+    @media screen and (max-width: 40em){
+      margin-inline-start: 0;
+    }
   }
   .location-icon{
     width: 0.8em;
@@ -618,11 +621,14 @@ p{
 }
 .logo-card{
   background-color: $ab-white;
-  margin-bottom: 1.5rem;
+  // margin-bottom: 1.5rem;
   border-radius: 8px;
   overflow: hidden;
   aspect-ratio: 1400/930;
   padding: 2rem;
+  @media screen and (max-width: 40em){
+    margin-bottom: 0.5em;
+  }
   svg{
     width: 100%;
   }
