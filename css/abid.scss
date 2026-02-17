@@ -250,13 +250,13 @@ footer{
     font-size: 2.5rem;
     line-height: 1.2;
     @media screen and (max-width: 40em) {
-      line-height: 1.8rem;
+      font-size: 1.75rem;
     }
   }
   .photo{
     align-self: flex-end;
     @media screen and (max-width: 40em) {
-      margin-bottom: 1rem;
+      order: 2;
     }
   }
   p a{
