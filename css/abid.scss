@@ -113,7 +113,7 @@ header{
   .logo{
     width: 5rem;
     @media screen and (max-width: 40em) {
-      width: 6rem;
+      width: 3rem;
       margin-left: 0.5rem;
     }
     transition: all 0.20s ease-in-out;;
@@ -123,8 +123,8 @@ header{
   }
   .nav-item-container{
     @media screen and (max-width: 40em) {
-      margin-bottom: 0.5rem;
-      text-align: right;
+      // margin-bottom: 0.5rem;
+      // text-align: right;
     }
   }
   .nav-item{
