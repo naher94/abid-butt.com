@@ -2,17 +2,19 @@
 layout: default
 ---
 
-<div class="speaking-intro">
-  <h1 class="speaking">Speaking</h1>
-  <p>Throughout my career in travel and hospitality, I have had the privilege of speaking at industry conferences, leadership forums, and executive roundtables, sharing insights on service excellence, brand positioning, changing trends, and the evolving expectations of today's guest. My speaking engagements focus on the intersection of operational discipline and emotional intelligence, how thoughtful details, culture, and leadership behaviors translate into measurable performance. Drawing from hands on executive experience, each engagement is designed to be practical, relevant, and rooted in real world application whilst challenging conventional thinking and encouraging innovation in legacy systems.</p>
-  <p>I'm always eager for new opportunities to share insights and inspire conversations. Planning an event? Let's connect!</p>
-  <div class="grid-x cta-container">
-    <div class="email-wrapper cta-button cell shrink" onclick="copyToClipboard('me@abid-butt.com',this)">
-      <i class="fa-solid fa-envelope"></i> Email Me
+<div class="speaking-intro grid-x align-center">
+  <div class="cell medium-8">
+    <h1 class="speaking">Speaking</h1>
+    <p>Throughout my career in travel and hospitality, I have had the privilege of speaking at industry conferences, leadership forums, and executive roundtables, sharing insights on service excellence, brand positioning, changing trends, and the evolving expectations of today's guest. My speaking engagements focus on the intersection of operational discipline and emotional intelligence, how thoughtful details, culture, and leadership behaviors translate into measurable performance. Drawing from hands on executive experience, each engagement is designed to be practical, relevant, and rooted in real world application whilst challenging conventional thinking and encouraging innovation in legacy systems.</p>
+    <p>I'm always eager for new opportunities to share insights and inspire conversations. Planning an event? Let's connect!</p>
+    <div class="grid-x cta-container">
+      <div class="email-wrapper cta-button cell shrink" onclick="copyToClipboard('me@abid-butt.com',this)">
+        <i class="fa-solid fa-envelope"></i> Email Me
+      </div>
+      <a target="_blank" rel="noopener" class="cta-button cell shrink" href="https://www.linkedin.com/in/abidbutt/">
+        <i class="fa-brands fa-linkedin"></i> Message Me
+      </a>
     </div>
-    <a target="_blank" rel="noopener" class="cta-button cell shrink" href="https://www.linkedin.com/in/abidbutt/">
-      <i class="fa-brands fa-linkedin"></i> Message Me
-    </a>
   </div>
 </div>
 
@@ -20,10 +22,10 @@ layout: default
 {% assign industry = all_speaking | where: 'type', 'industry' %}
 {% assign academic = all_speaking | where: 'type', 'academic' %}
 
-<div class="speaking-nav">
+<!-- <div class="speaking-nav">
   <a href="#industry-events">Industry Events</a>
   <a href="#academic-engagement">Academic Engagement</a>
-</div>
+</div> -->
 
 <section class="speaking-section grid-x align-center" id="industry-events">
   <h2 class="cell medium-8">Industry Events</h2>
