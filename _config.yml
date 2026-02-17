@@ -39,3 +39,6 @@ collections:
 
   roles:
     output: false
+
+exclude:
+  - tina/
