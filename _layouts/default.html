@@ -3,10 +3,12 @@
 
   {% include head.html %}
 
-  <body>
+  <body{% if page.hero %} class="hero-page"{% endif %}>
 
     {% include header.html %}
-
+    {% if page.hero %}
+      {% include hero.html %}
+    {% endif %}
     <div class="page-content grid-container">
         {{ content }}
     </div>
