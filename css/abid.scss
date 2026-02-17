@@ -485,12 +485,6 @@ p{
   }
 }
 
-.news-container{
-  margin-bottom: 50px;
-  .press-image{
-    margin-bottom: 10px;
-  }
-}
 
 .no-select{
     -webkit-touch-callout: none;
@@ -503,38 +497,142 @@ p{
     -webkit-user-drag: none;
 }
 
-.speaking, .academic{
+.speaking{
   font-weight: $bold;
-  padding: 0 0.625rem;
 }
 
-.academic-logo-container{
-  img{
-    margin-bottom: 2rem;
+.speaking-intro{
+  margin-bottom: 3rem;
+  padding: 0 0.625rem;
+  p{
+    margin-bottom: 1rem;
+  }
+  .cta-container{
+    margin-block-start: 2rem;
+  }
+  .cta-button{
+    padding: 0.7rem 1rem;
+    color: inherit;
+    border-radius: 14px;
+    border: solid 0.2rem $ab-black;
+    font-weight: $bold;
+    transition: all 0.20s ease-in-out;
+    text-align: center;
+    &:hover{
+      color: $ab-white;
+      background-color: $ab-black;
+      text-decoration: none;
+    }
+    i{
+      margin-right: 0.25em;
+    }
+    &:first-child{
+      background-color: $ab-black;
+      color: $ab-white;
+      margin-right: 0.5em;
+      &:hover{
+        opacity: 0.85;
+      }
+    }
+    &.email-wrapper{
+      position: relative;
+      display: inline;
+      cursor: pointer;
+      .copied{
+        font-size: 1em;
+        left: 20%;
+        right: unset;
+        font-weight: $bold;
+        @media screen and (max-width: 40em) {
+          left: 40%;
+        }
+      }
+    }
   }
 }
 
-.event{
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  @media screen and (max-width: 40em){
-    font-size: 1rem;
+.speaking-nav{
+  margin-bottom: 3rem;
+  a{
+    font-weight: $bold;
+    color: $ab-black;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    @include swipe-underline(rgba($hospitality-talks-blue, 0.3), true);
+  }
+}
+
+.speaking-section{
+  margin-bottom: 4rem;
+  @media screen and (max-width: 40em) {
+    padding-inline: 1em;
+  }
+  h2{
+    font-weight: $bold;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    @media screen and (max-width: 40em){
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.event-card{
+  margin-bottom: 1.5rem;
+  .image-card{
+    border-radius: 8px;
+    overflow: hidden;
+    @media screen and (max-width: 40em){
+      margin-bottom: 0.5em;
+    }
+  }
+  img{
+    // border-radius: 8px;
+    // margin-bottom: 0.5rem;
+  }
+  .text-content{
+    margin-inline-start: 1em;
+  }
+  .location-icon{
+    width: 0.8em;
+    vertical-align: text-top;
+    margin-right: 0.15em;
+    margin-bottom: 0
   }
   .metadata{
     font-style: italic;
     margin-bottom: 0;
+    font-size: 1rem;
+    @media screen and (max-width: 40em){
+      font-size: 0.85rem;
+    }
   }
   .title{
     font-weight: $bold;
     margin-bottom: 0;
+    font-size: 1.5rem;
+    @media screen and (max-width: 40em){
+      font-size: 1rem;
+    }
   }
 }
-
-.education{
-  margin-top: 5rem;
-  h3{
-    font-weight: $bold;
+.logo-card{
+  background-color: $ab-white;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 1400/930;
+  padding: 2rem;
+  svg{
+    width: 100%;
   }
+}
+.text-container{
+  margin-inline-start: 1em;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 //Used on featured item

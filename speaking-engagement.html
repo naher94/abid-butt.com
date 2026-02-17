@@ -2,63 +2,76 @@
 layout: default
 ---
 
-<h1 class="speaking">Speaking Engagements</h1>
-<div class="grid-x">
-  <div class="grid-x cell small-12 medium-6 grid-padding-x">
-    {% assign news_order = site.news | sort: 'date' | reverse %}
-    {% for item in news_order %}
-      <div class="small-12 cell">
-        <div class="news-container">
-          
-          {% if item.image %}
-          <img class="press-image no-select" alt="{{ item.caption }}" src="/img/news/{{ item.image }}">
-          <span class="caption">{{ item.caption }}</span>
-          {% endif %}
-          
-          {% if item.title %}
-            {% if item.link %}
-            <a class="post-link" href="{{ item.link }}">
-              <span class="title">{{ item.title }}</span>
-              <span class="link">{{ item.link | truncate: 30 }}</span>
-            </a>
-            {% endif %}
-        
-            {% if item.pdf %}
-            <a class="post-link" href="{{ item.pdf }}">
-              <span class="title">{{ item.title }}</span>
-              <span class="link">{{ item.pdf }}</span>
-            </a>
-            {% endif %}
-          {% endif %}
-        </div>
-      </div>
-    {% endfor %}
+<div class="speaking-intro">
+  <h1 class="speaking">Speaking</h1>
+  <p>Throughout my career in travel and hospitality, I have had the privilege of speaking at industry conferences, leadership forums, and executive roundtables, sharing insights on service excellence, brand positioning, changing trends, and the evolving expectations of today's guest. My speaking engagements focus on the intersection of operational discipline and emotional intelligence, how thoughtful details, culture, and leadership behaviors translate into measurable performance. Drawing from hands on executive experience, each engagement is designed to be practical, relevant, and rooted in real world application whilst challenging conventional thinking and encouraging innovation in legacy systems.</p>
+  <p>I'm always eager for new opportunities to share insights and inspire conversations. Planning an event? Let's connect!</p>
+  <div class="grid-x cta-container">
+    <div class="email-wrapper cta-button cell shrink" onclick="copyToClipboard('me@abid-butt.com',this)">
+      <i class="fa-solid fa-envelope"></i> Email Me
+    </div>
+    <a target="_blank" rel="noopener" class="cta-button cell shrink" href="https://www.linkedin.com/in/abidbutt/">
+      <i class="fa-brands fa-linkedin"></i> Message Me
+    </a>
   </div>
+</div>
 
-  <div class="grid-y cell small-12 medium-6 grid-padding-x">
-    {% assign speaking_order = site.speaking-engagements | sort: 'date' | reverse %}
-    {% for event in speaking_order %}
-    <div class="event cell">
-      <!-- TODO add an link here swipe underline -->
+{% assign all_speaking = site.speaking | sort: 'date' | reverse %}
+{% assign industry = all_speaking | where: 'type', 'industry' %}
+{% assign academic = all_speaking | where: 'type', 'academic' %}
+
+<div class="speaking-nav">
+  <a href="#industry-events">Industry Events</a>
+  <a href="#academic-engagement">Academic Engagement</a>
+</div>
+
+<section class="speaking-section grid-x align-center" id="industry-events">
+  <h2 class="cell medium-8">Industry Events</h2>
+  {% for event in industry %}
+  <div class="grid-x cell medium-8 event-card">
+    <div class="cell small-12 medium-5 image-card">
+      {% if event.image %}
+        <img src="/img/speaking/{{ event.image }}" alt="{{ event.image-alt | default: event.event-name }}">
+      {% endif %}
+    </div>
+    <div class="cell small-12 medium-auto text-content">
       {% if event.link %}
         <a href="{{ event.link }}" target="_blank" class="speaking-link">
       {% endif %}
-      <p class="metadata">
-        {% if event.event-type %}
-          {{event.event-type}} -
-        {% endif %}
-        {{event.location}}
-        {{event.date | date: "%Y"}}
+      <p class="title">{{ event.event-name }}
+        {% if event.link %}<i class="fa-solid fa-link" aria-hidden="true"></i>{% endif %}
       </p>
-      <p class="title">{{event.event-name}}
-        {% if event.link %}
-        <i class="fa-solid fa-link" aria-hidden="true"></i>
-        {% endif %}
+      <p class="metadata">
+        {%- comment -%}
+        {% if event.event-type %}{{ event.event-type }}{% endif %}
+        {%- endcomment -%}
+        <img src="/img/location-dot.svg" class="location-icon" alt="Location pin"> {{ event.location }} {{ event.date | date: "%Y" }}
       </p>
       {% if event.link %}
         </a>
       {% endif %}
     </div>
-    {% endfor %}
   </div>
-</div>
+  {% endfor %}
+</section>
+
+<section class="speaking-section grid-x align-center" id="academic-engagement">
+  <h2 class="cell medium-8">Academic Engagement</h2>
+  {% for event in academic %}
+  <div class="grid-x cell medium-8 event-card">
+    <div class="cell small-12 medium-5 grid-x">
+      {% if event.image %}
+      <div class="logo-card align-middle align-center grid-x">
+        <div class="cell">
+          {%- include_relative /img/speaking/{{ event.image }} -%}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+    <div class="cell small-12 medium-auto text-container">
+      <p class="title">{{ event.event-name }}</p>
+      <p class="metadata">{{ event.event-type }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
