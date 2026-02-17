@@ -64,6 +64,26 @@
 
 </footer>
 
+<script>
+function copyToClipboard(link, clickedItem) {
+  if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+    var copyBadge = document.createElement("span");
+    copyBadge.classList.add("copied");
+    copyBadge.setAttribute("id", "copy-confirmation");
+    copyBadge.innerText = "Copied!";
+    clickedItem.appendChild(copyBadge);
+    navigator.clipboard.writeText(link);
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () { copyBadge.classList.add('visible'); });
+    });
+    setTimeout(function () { copyBadge.classList.remove('visible'); }, 1500);
+    setTimeout(function () { copyBadge.remove(); }, 1900);
+    return;
+  }
+  return Promise.reject('The Clipboard API is not available.');
+}
+</script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BETP0V856"></script>
 <script>
