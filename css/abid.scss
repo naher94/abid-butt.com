@@ -167,33 +167,18 @@ footer{
     margin-bottom: 4rem;
     @media screen and (max-width: 40em){
       margin-bottom: 2rem;
-      // text-align: right;
-      // font-size: 1.5rem;
     }
   }
   .logo-container{
     @media screen and (max-width: 40em){
-      // text-align: right;
       padding: 1em;
-      // padding-right: 0.5rem;
       margin-bottom: 2rem;
     }
   }
   .social-container {
-    @media screen and (max-width: 40em){
-      // text-align: right;
-    }
     a{
       padding: .7rem;
       color: $ab-black;
-      @media screen and (max-width: 40em){
-        // font-size: 1.5em;
-      }
-      i{
-        @media screen and (max-width: 40em){
-          // font-size: 1.5em;
-        }
-      }
       &:hover, &:focus{
         .fa-brands, .fa-solid{
           color: $hospitality-talks-blue;
@@ -233,9 +218,6 @@ footer{
     cursor: pointer;
     padding: .7rem;
     color: $ab-black;
-    @media screen and (max-width: 40em){
-      // font-size: 1.5em;
-    }
     &:hover, &:focus{
       .fa-solid{
         color: $hospitality-talks-blue;
@@ -480,9 +462,6 @@ p{
       }
     }
   }
-  // .career-summary{
-  //   margin-bottom: 4rem;
-  // }
 }
 
 .resume-card{
