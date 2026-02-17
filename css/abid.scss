@@ -181,7 +181,7 @@ footer{
       color: $ab-black;
       &:hover, &:focus{
         .fa-brands, .fa-solid{
-          color: $hospitality-talks-blue;
+          color: #181818;
           animation: boing 300ms ease-out;
         }
       }
@@ -220,7 +220,7 @@ footer{
     color: $ab-black;
     &:hover, &:focus{
       .fa-solid{
-        color: $hospitality-talks-blue;
+        color: #181818;
         animation: boing 300ms ease-out;
       }
     }
@@ -552,16 +552,16 @@ p{
   }
 }
 
-.speaking-nav{
-  margin-bottom: 3rem;
-  a{
-    font-weight: $bold;
-    color: $ab-black;
-    margin-right: 1.5rem;
-    text-decoration: none;
-    @include swipe-underline(rgba($hospitality-talks-blue, 0.3), true);
-  }
-}
+// .speaking-nav{
+//   margin-bottom: 3rem;
+//   a{
+//     font-weight: $bold;
+//     color: $ab-black;
+//     margin-right: 1.5rem;
+//     text-decoration: none;
+//     @include swipe-underline(rgba($hospitality-talks-blue, 0.3), true);
+//   }
+// }
 
 .speaking-section{
   margin-bottom: 4rem;
@@ -586,10 +586,6 @@ p{
     @media screen and (max-width: 40em){
       margin-bottom: 0.5em;
     }
-  }
-  img{
-    // border-radius: 8px;
-    // margin-bottom: 0.5rem;
   }
   .text-content{
     margin-inline-start: 1em;
@@ -622,7 +618,6 @@ p{
 }
 .logo-card{
   background-color: $ab-white;
-  // margin-bottom: 1.5rem;
   border-radius: 8px;
   overflow: hidden;
   aspect-ratio: 1400/930;
@@ -733,7 +728,7 @@ html{
         }
         &:hover, &:focus{
           .fa-brands, .fa-solid{
-            color: $hospitality-talks-blue;
+            color: #181818;
             animation: boing 300ms ease-out;
           }
         }
