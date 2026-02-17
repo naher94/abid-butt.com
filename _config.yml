@@ -28,20 +28,14 @@ ab-instagram: https://www.instagram.com/abidmhbutt/
 markdown: kramdown
 
 collections:
-  news:
+  speaking:
     output: false
-  
+
   hospitality-talks:
     output: false
 
-  speaking-engagements:
-    output: false
-
-  academic-engagements:
-    output: false
-  
   education:
     output: false
-  
+
   roles:
     output: false
