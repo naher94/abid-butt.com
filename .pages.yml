@@ -1,0 +1,98 @@
+media:
+  - name: images
+    input: img
+    output: /img
+    extensions: [jpg, jpeg, png, gif, webp, svg]
+  - name: speaking-images
+    input: img/speaking
+    output: /img/speaking
+    extensions: [jpg, jpeg, png, gif, webp, svg]
+
+content:
+  - name: speaking
+    label: Speaking Engagements
+    type: collection
+    path: _speaking
+    fields:
+      - name: type
+        label: Type
+        type: select
+        options:
+          values: [industry, academic]
+      - name: event-type
+        label: Event Type
+        type: select
+        options:
+          values: [Panelist, Speaker, Moderator, Keynote]
+      - name: event-name
+        label: Event Name
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: location
+        label: Location
+        type: string
+      - name: image
+        label: Image
+        type: image
+        options:
+          media: speaking-images
+      - name: image-alt
+        label: Image Alt Text
+        type: string
+
+  - name: education
+    label: Education
+    type: collection
+    path: _education
+    fields:
+      - name: institution
+        label: Institution
+        type: string
+      - name: title
+        label: Degree / Title
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: location
+        label: Location
+        type: string
+
+  - name: roles
+    label: Roles
+    type: collection
+    path: _roles
+    fields:
+      - name: company
+        label: Company
+        type: string
+      - name: role-title
+        label: Role Title
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: logo
+        label: Logo
+        type: image
+        options:
+          media: images
+      - name: logo-alt
+        label: Logo Alt Text
+        type: string
+      - name: brand-image
+        label: Brand Image
+        type: image
+        options:
+          media: images
+      - name: brand-image-alt
+        label: Brand Image Alt Text
+        type: string
+      - name: display-order
+        label: Display Order
+        type: number
+      - name: link
+        label: Website URL
+        type: string
