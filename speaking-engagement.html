@@ -33,7 +33,7 @@ layout: default
   <div class="grid-x cell medium-8 event-card">
     <div class="cell small-12 medium-5 image-card">
       {% if event.image %}
-        <img src="/img/speaking/{{ event.image }}" alt="{{ event.image-alt | default: event.event-name }}">
+        <img src="{{ event.image }}" alt="{{ event.image-alt | default: event.event-name }}">
       {% endif %}
     </div>
     <div class="cell small-12 medium-auto text-content">
@@ -65,7 +65,7 @@ layout: default
       {% if event.image %}
       <div class="logo-card align-middle align-center cell grid-x">
         <div class="cell">
-          {%- include_relative /img/speaking/{{ event.image }} -%}
+          {%- include_relative {{ event.image | remove_first: '/' }} -%}
         </div>
       </div>
       {% endif %}
